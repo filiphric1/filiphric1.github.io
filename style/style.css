@@ -252,6 +252,12 @@
         cursor: default;
     }
     /* Predstaveni MQ */
+    
+    @media all and (max-width: 580px) {
+        .post-header {
+            padding: 3em;
+        }
+    }
     /* O mne */
     
     .description {
