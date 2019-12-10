@@ -141,7 +141,7 @@ header {
     }
 }
 
-@media all and (max-width: 858px) {
+@media all and (max-width: 857px) {
     .logo {
         order: 1;
     }
