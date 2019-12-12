@@ -100,9 +100,9 @@
     }
     
     .main-menu {
-        -webkit-box-flex: 4 0 auto;
-        -ms-flex: 4 0 auto;
-        flex: 4 0 auto;
+        -webkit-box-flex: 3 0 auto;
+        -ms-flex: 3 0 auto;
+        flex: 3 0 auto;
         text-align: center;
         margin: 0;
         padding: 0;
@@ -124,13 +124,13 @@
     
     .main-menu a:hover {
         color: #84A8E4;
-        background: rgba(132, 167, 228, 0.2);
+        background: rgba(132, 167, 228, 0.1);
     }
     
     .socials {
-        -webkit-box-flex: 2 0 auto;
-        -ms-flex: 2 0 auto;
-        flex: 2 0 auto;
+        -webkit-box-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
         font-size: 2em;
         text-align: center;
     }
