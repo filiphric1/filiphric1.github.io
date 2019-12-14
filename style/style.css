@@ -283,6 +283,7 @@
         max-width: 100%;
         max-height: 370px;
         border-radius: 5px;
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
     }
     
     .artcile-h {
@@ -301,6 +302,7 @@
         padding: 1em 2em;
         margin: 0;
         background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
         border-radius: 8px;
         line-height: 1.8em;
         letter-spacing: .1em;
@@ -335,7 +337,8 @@
     
     .projects {
         background: #161B28;
-        padding: 6em 0;
+        padding: 4em 0;
+        font-size: 16px;
     }
     
     .projects .container {
@@ -345,12 +348,20 @@
     .section-header {
         padding: 0;
         margin: 30px 0;
+        text-align: center;
     }
     
     .section-header h2 {
-        text-align: center;
+        display: inline-block;
+        background: rgba(44, 54, 80, 0.4);
+        border-radius: 1em;
         text-transform: uppercase;
-        font-weight: 700;
+        font-size: 2em;
+        font-weight: 300;
+        margin: 0 auto;
+        padding: .5em 1em;
+        -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
     }
     
     .project-items {
@@ -366,10 +377,16 @@
         margin: 0 20px;
         padding: 0 0 1em;
         background: rgba(44, 54, 80);
+        border: 5px solid rgba(44, 54, 80);
         text-align: center;
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
         overflow: hidden;
+    }
+    
+    .section:hover {
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
     }
     
     .section h3 {
@@ -378,27 +395,12 @@
         margin: 0;
     }
     
-    .section img:before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(44, 54, 80, 0.8);
-        display: block;
-        z-index: 10;
-    }
-    
     .section img {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         max-width: 100%;
         height: auto;
-        border: 5px solid rgba(44, 54, 80);
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
     }
     
     .button-project {
@@ -422,26 +424,61 @@
         color: #000;
         box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
     }
+    /* Projekty - MQ */
+    
+    @media all and (max-width: 1050px) {
+        .project-items {
+            flex-flow: column;
+        }
+        .section {
+            max-width: 75%;
+            margin: 0 auto 2em auto;
+        }
+    }
+    
+    @media all and (max-width: 775px) {
+        .projects {
+            font-size: 85%;
+        }
+    }
     /* Partneři */
     /*kontakt*/
     
-    .row {
-        text-align: center;
-    }
-    
     .kontakt {
-        background: #050C16;
-        padding: 6em 0;
+        background: #000;
+        padding: 4em 0;
     }
     
-    .kontakt p {
-        line-height: 1.5em;
-        letter-spacing: .1em;
-        margin: 0
+    .kontakt-content {
+        display: flex;
+        align-items: center;
     }
     
-    .kontakt a {
-        color: #fff;
+    .kontakt-img {
+        flex: 1;
+    }
+    
+    .kontakt-info {
+        flex: 1;
+        color: rgba(44, 54, 80);
+    }
+    
+    .kontakt-name h4 {
+        font-size: 2.5em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    
+    .kontakt-function p {
+        font-size: 1.5em;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .kontakt-info a {
+        color: rgba(44, 54, 80);
     }
     /* Footer */
     
