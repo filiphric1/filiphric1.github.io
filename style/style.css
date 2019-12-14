@@ -281,7 +281,7 @@
     
     .description-content img {
         max-width: 100%;
-        height: auto;
+        max-height: 370px;
         border-radius: 5px;
     }
     
@@ -331,45 +331,76 @@
             font-size: 85%;
         }
     }
-    /* Uspechy */
+    /* Projekty */
     
-    .uspechy {
+    .projects {
         background: #161B28;
         padding: 6em 0;
     }
     
-    .uspechy-content {
+    .projects .container {
+        padding-bottom: 50px;
+    }
+    
+    .section-header {
+        padding: 0;
+        margin: 30px 0;
+    }
+    
+    .section-header h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .project-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
     
-    .uspechy-content img {
+    .section {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        padding: 0 1em;
-        height: 370px;
-        margin-left: 15px;
-    }
-    
-    .artcile-h {
-        font-size: 2.5em;
-        font-weight: 600;
-        line-height: 2em;
-    }
-    
-    .uspechy-content p {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        padding: 1em 2em;
+        margin: 0 20px;
         background: rgba(44, 54, 80);
-        border-radius: 8px;
-        line-height: 1.8em;
-        letter-spacing: .1em;
-        text-align: left;
-        margin-right: 15px;
+        text-align: center;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        overflow: hidden;
+    }
+    
+    .section h3 {
+        font-weight: 300;
+        padding: .7em 0;
+    }
+    
+    .section img:before {
+        content: ' ';
+        background: ;
+    }
+    
+    .section img {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+        border: 5px solid rgba(44, 54, 80);
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    }
+    
+    .button-project {
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0.7em;
+        color: #fff;
+        background: #161B28;
+        border-radius: 5px;
     }
     /*Galerie*/
     
