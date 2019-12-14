@@ -16,6 +16,7 @@
     body {
         margin: 0;
         color: #fff;
+        background: rgba(44, 54, 80);
         font-family: 'Roboto', sans-serif;
     }
     
@@ -483,7 +484,7 @@
     /* Footer */
     
     .footer {
-        background: rgb(77, 77, 77);
+        background: rgb(17, 17, 17);
     }
     
     .footer p {
