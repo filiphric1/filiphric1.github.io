@@ -252,7 +252,7 @@
         padding: .8em;
         text-transform: uppercase;
         text-align: center;
-        background: rgba(44, 54, 80);
+        background: rgb(44, 54, 80);
         border-radius: 1em;
         border: solid 2px #fff;
         -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
@@ -274,7 +274,7 @@
     /* O mne */
     
     .description {
-        background: rgba(44, 54, 80);
+        background: rgb(44, 54, 80);
         padding: 6em 0;
     }
     
@@ -394,8 +394,8 @@
         flex: 1;
         margin: 0 20px;
         padding: 0 0 1em;
-        background: rgba(44, 54, 80);
-        border: 5px solid rgba(44, 54, 80);
+        background: rgb(44, 54, 80);
+        border: 5px solid rgb(44, 54, 80);
         text-align: center;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -467,7 +467,7 @@
     /* Galerie */
     
     .galerie {
-        background: rgba(44, 54, 80);
+        background: rgb(44, 54, 80);
         padding: 4em 0;
     }
     
@@ -515,7 +515,7 @@
         font-weight: 600;
         letter-spacing: 2px;
         margin: 0;
-        color: rgba(44, 54, 80);
+        color: rgb(44, 54, 80);
     }
     
     .kontakt-function p {
@@ -523,7 +523,7 @@
         font-weight: 300;
         letter-spacing: 2px;
         text-transform: uppercase;
-        color: rgba(44, 54, 80);
+        color: rgb(44, 54, 80);
     }
     
     .kontakt-info a {
