@@ -233,7 +233,7 @@
         margin: 0 auto;
         width: 15em;
         border-radius: 50%;
-        border: solid .2em rgba(44, 54, 80, 0.8);
+        border: solid .1em #fff;
         -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
         box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
     }
@@ -526,7 +526,12 @@
         color: rgb(44, 54, 80);
     }
     
-    .kontakt-info a {
+    .address p {
+        letter-spacing: 2px;
+        line-height: 1.5em;
+    }
+    
+    .address a {
         color: #fff;
     }
     /* Kontakt - MQ */
