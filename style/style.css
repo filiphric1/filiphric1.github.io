@@ -120,7 +120,6 @@
         font-weight: 300;
         padding: 1.2em 1.2em;
         scroll-behavior: smooth;
-        border-radius: .3em
     }
     
     .main-menu a:hover {
@@ -191,9 +190,10 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        /*width: auto;
-        height: auto;*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
         z-index: -2;
     }
     
@@ -441,7 +441,23 @@
             font-size: 85%;
         }
     }
-    /* Partneři */
+    /* Galerie */
+    
+    .galerie {
+        background: rgba(44, 54, 80);
+        padding: 4em 0;
+    }
+    
+    .galerie .section-header h2 {
+        background: #161B28;
+    }
+    
+    .galerie-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
     /*kontakt*/
     
     .kontakt {
@@ -460,7 +476,7 @@
     
     .kontakt-info {
         flex: 1;
-        color: rgba(44, 54, 80);
+        color: #fff;
     }
     
     .kontakt-name h4 {
@@ -468,6 +484,7 @@
         font-weight: 600;
         letter-spacing: 2px;
         margin: 0;
+        color: rgba(44, 54, 80);
     }
     
     .kontakt-function p {
@@ -475,10 +492,22 @@
         font-weight: 300;
         letter-spacing: 2px;
         text-transform: uppercase;
+        color: rgba(44, 54, 80);
     }
     
     .kontakt-info a {
-        color: rgba(44, 54, 80);
+        color: #fff;
+    }
+    /* Kontakt - MQ */
+    
+    @media all and (max-width: 775px) {
+        .kontakt-content {
+            flex-flow: column;
+            text-align: center;
+        }
+        .kontakt-img {
+            margin-bottom: 40px;
+        }
     }
     /* Footer */
     
