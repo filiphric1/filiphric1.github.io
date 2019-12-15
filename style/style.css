@@ -438,7 +438,8 @@
         font-weight: 600;
     }
     
-    .button-project a:hover {
+    .button-project a:hover,
+    .button-project a:focus {
         background: #c7f532;
         color: #000;
         -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
@@ -480,6 +481,14 @@
         height: auto;
         margin-bottom: 30px;
         border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
+    }
+    
+    .galerie-content img:hover,
+    .galerie-content img:focus {
+        transform: scale(1.05);
+        transition: all .3s ease;
     }
     /*kontakt*/
     
