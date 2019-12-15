@@ -490,6 +490,13 @@
         transform: scale(1.05);
         transition: all .3s ease;
     }
+    /* Galerie - MQ */
+    
+    @media all and (max-width: 775px) {
+        .galerie .section-header h2 {
+            font-size: 25px;
+        }
+    }
     /*kontakt*/
     
     .kontakt {
