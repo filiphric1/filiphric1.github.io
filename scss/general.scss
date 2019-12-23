@@ -1,0 +1,53 @@
+    html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+    
+    body {
+        margin: 0;
+        color: $fnt-clr;
+        max-width: 100%;
+        font-family: $fnt-family;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+    
+    .container {
+        max-width: 71.875em;
+        margin: 0 auto;
+    }
+    /* Clearfix */
+    
+    .container:before,
+    .group:before,
+    .menu:before,
+    .container:after,
+    .group:after,
+    .menu:after {
+        content: " ";
+        display: table;
+    }
+    
+    .container:after,
+    .group:after,
+    .main:after {
+        clear: both;
+    }
+    
+    .container,
+    .group,
+    .main {
+        *zoom: 1;
+    }
