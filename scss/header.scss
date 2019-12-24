@@ -1,3 +1,82 @@
 .site-header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     @include basicShadow;
+    background: $bg-clr-light;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-wrapper {
+    flex: 1 0 auto;
+    margin: .2em 0;
+    text-align: center;
+}
+
+.logo {
+    color: $fnt-clr;
+    border: solid 2px $fnt-clr;
+    border-radius: 8px;
+    font: {
+        size: 3em;
+        weight: 900;
+    }
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    letter-spacing: -5px;
+    padding: 0 .2em 0 .1em;
+    &:hover,
+    &:focus {
+        color: $fnt-hover;
+        border: solid 2px $fnt-hover;
+        text-decoration: none;
+    }
+}
+
+.main-menu {
+    flex: 3 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        font-size: 1.2em;
+    }
+    a {
+        display: block;
+        color: $fnt-clr;
+        font-weight: 300;
+        padding: 1.2em;
+        scroll-behavior: smooth;
+        &:hover,
+        &:focus {
+            color: $fnt-hover;
+            background: lighten($bg-clr-light, 3%)
+        }
+    }
+}
+
+.socials {
+    flex: 1 0 auto;
+    font-size: 2em;
+    text-align: center;
+    a {
+        color: $fnt-clr;
+        &:hover,
+        &:focus {
+            color: $fnt-hover;
+        }
+        .fab {
+            margin: .7em .3em;
+        }
+    }
 }

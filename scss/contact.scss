@@ -1,0 +1,54 @@
+  .kontakt {
+      background: $bg-black;
+      padding: 4em 0;
+  }
+  
+  .kontakt-content {
+      display: flex;
+      align-items: center;
+  }
+  
+  .kontakt-img {
+      flex: 1;
+  }
+  
+  .kontakt-info {
+      flex: 1;
+      .kontakt-name h4 {
+          color: $bg-clr-light;
+          font: {
+              size: 2.5em;
+              weight: 600;
+          }
+          letter-spacing: 2px;
+          margin: 0;
+      }
+      .kontakt-function p {
+          color: $bg-clr-light;
+          font: {
+              size: 1.5em;
+              weight: 300;
+          }
+          letter-spacing: 2px;
+          text-transform: uppercase;
+      }
+      .address {
+          p {
+              letter-spacing: 2px;
+              line-height: 1.5em;
+          }
+          a {
+              color: #fff;
+          }
+      }
+  }
+  
+  .footer {
+      background: lighten($bg-black, 5%);
+      p {
+          text-align: center;
+          font-weight: 300;
+          padding: .4em 0;
+          margin: 0;
+      }
+  }

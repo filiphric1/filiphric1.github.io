@@ -15,7 +15,10 @@
         margin: 0;
         color: $fnt-clr;
         max-width: 100%;
-        font-family: $fnt-family;
+        font: {
+            family: $fnt-family;
+            size: 100%;
+        }
     }
     
     a,

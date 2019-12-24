@@ -1,0 +1,68 @@
+.post-header {
+    width: 100%;
+    padding: 10em 0 3em 0;
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -2;
+    }
+    &:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300%;
+        background: transparentize($bg-clr-light, 0.2);
+        display: block;
+        z-index: -1;
+    }
+}
+
+.intro {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile {
+    display: block;
+    width: 15em;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: solid .15em $fnt-clr;
+    @include basicShadow;
+    &:hover,
+    &:focus {
+        @include hoverShadow;
+    }
+}
+
+.typewrite {
+    display: inline-block;
+    font: {
+        size: 1.6em;
+        weight: 300;
+    }
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    letter-spacing: .1em;
+    margin: 2em auto 4em auto;
+    padding: .8em;
+    background: $bg-clr-light;
+    border: solid 2px $fnt-clr;
+    border-radius: 1em;
+    @include basicShadow;
+    &:hover,
+    &:focus {
+        @include hoverShadow;
+        cursor: default;
+    }
+}

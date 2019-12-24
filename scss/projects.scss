@@ -1,0 +1,77 @@
+.projects {
+    background: $bg-clr-dark;
+    padding: 4em 0;
+    .container {
+        padding-bottom: 50px;
+    }
+}
+
+.section-header {
+    padding: 0;
+    margin: 30px 0;
+    text-align: center;
+    h2 {
+        display: inline-block;
+        background: transparentize($bg-clr-light, 0.4);
+        border-radius: 1em;
+        text-transform: uppercase;
+        font: {
+            size: 2em;
+            weight: 300;
+        }
+        margin: 0 auto;
+        padding: .5em 1em;
+        @include basicShadow;
+    }
+}
+
+.section-wrapper {
+    padding: 1em;
+}
+
+.section {
+    padding: 0 0 1em;
+    text-align: center;
+    background: $bg-clr-light;
+    border: 5px solid $bg-clr-light;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    @include basicShadow;
+    overflow: hidden;
+    &:hover {
+        border: 5px solid $fnt-clr;
+        @include hoverShadow;
+    }
+    h3 {
+        font-weight: 300;
+        padding: .7em 0;
+        margin: 0;
+    }
+    img {
+        box-sizing: border-box;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.button-project {
+    display: inline-block;
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+    margin-top: 20px;
+    a {
+        display: block;
+        padding: 1em;
+        background: $bg-btn;
+        color: $fnt-clr-dark;
+        border-radius: 5px;
+        font-weight: 600;
+        &:hover,
+        &:focus {
+            background: $bg-btn-hover;
+            @include basicShadow;
+        }
+    }
+}
