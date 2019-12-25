@@ -15,6 +15,7 @@
     h2 {
         display: inline-block;
         background: transparentize($bg-clr-light, 0.1);
+        border: 2px solid $fnt-clr;
         border-radius: 1em;
         text-transform: uppercase;
         font: {
