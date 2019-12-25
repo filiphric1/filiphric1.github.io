@@ -39,6 +39,18 @@
           }
           a {
               color: $fnt-clr;
+              &:hover,
+              &:focus {
+                  color: $fnt-hover;
+              }
+          }
+          .socials-contact {
+              p {
+                  letter-spacing: .5em;
+              }
+              .fab {
+                  font-size: 1.5em;
+              }
           }
       }
   }
