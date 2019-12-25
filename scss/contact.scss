@@ -38,7 +38,7 @@
               line-height: 1.5em;
           }
           a {
-              color: #fff;
+              color: $fnt-clr;
           }
       }
   }
@@ -46,8 +46,13 @@
   .footer {
       background: lighten($bg-black, 5%);
       p {
+          color: darken($fnt-clr, 70%);
+          font: {
+              size: .8em;
+              weight: 300;
+          }
           text-align: center;
-          font-weight: 300;
+          letter-spacing: 1px;
           padding: .4em 0;
           margin: 0;
       }
