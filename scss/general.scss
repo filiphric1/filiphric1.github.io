@@ -4,6 +4,11 @@
         scroll-behavior: smooth;
     }
     
+     ::selection {
+        background: $bg-clr-light;
+        color: $fnt-clr;
+    }
+    
     *,
     *:before,
     *:after {
@@ -23,8 +28,10 @@
     
     a,
     a:hover,
+    a:active,
     a:focus {
         text-decoration: none;
+        outline: none;
     }
     
     .container {

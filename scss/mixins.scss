@@ -5,3 +5,7 @@
 @mixin hoverShadow {
     box-shadow: 0px 0px 1em rgba(0, 0, 0, 1);
 }
+
+@mixin projectShadow {
+    box-shadow: 0px 0px 1em $bg-clr-light;
+}

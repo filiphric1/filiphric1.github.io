@@ -1,5 +1,5 @@
 .projects {
-    background: url(../img/projects-bg1.jpg) fixed center center no-repeat;
+    background: url(../img/projects-bg2.jpg) fixed center center no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px transparentize($bg-clr-dark, 0.2);
     padding: 4em 0;
@@ -35,17 +35,17 @@
 .section {
     padding: 0 0 1em;
     text-align: center;
-    background: transparentize($bg-clr-light, 0.2);
-    border: 4px solid transparentize($bg-clr-light, 0.2);
+    background: transparentize($bg-clr-dark, 0.3);
+    border: 4px solid transparentize($bg-clr-dark, 0.3);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     @include basicShadow;
     overflow: hidden;
     &:hover {
         transition: .3s ease-in-out;
-        background: $bg-clr-light;
-        border: 4px solid $fnt-clr;
-        @include hoverShadow;
+        background: transparentize($bg-clr-dark, 0.1);
+        border: 4px solid transparentize($bg-clr-dark, 0.1);
+        @include projectShadow;
     }
     h3 {
         font-weight: 300;
