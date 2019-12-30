@@ -10,6 +10,9 @@
   
   .kontakt-img {
       flex: 1;
+      .profile {
+          border: 2px solid darken($fnt-clr, 40%);
+      }
   }
   
   .kontakt-info {
@@ -36,9 +39,10 @@
           p {
               letter-spacing: 2px;
               line-height: 1.5em;
+              color: darken($fnt-clr, 40%);
           }
           a {
-              color: $fnt-clr;
+              color: darken($fnt-clr, 40%);
               &:hover,
               &:focus {
                   color: $fnt-hover;

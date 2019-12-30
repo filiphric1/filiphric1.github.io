@@ -12,7 +12,8 @@
     padding: 0;
     margin: 30px 0;
     text-align: center;
-    h2 {
+    h2,
+    a {
         display: inline-block;
         background: transparentize($bg-clr-light, 0.1);
         border: 2px solid $fnt-clr;

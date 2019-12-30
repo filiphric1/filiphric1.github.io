@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media all and (max-width: 1050px) {
   .site-header {
     font-size: 85%; }
@@ -336,7 +337,8 @@ a:focus {
   padding: 0;
   margin: 30px 0;
   text-align: center; }
-  .section-header h2 {
+  .section-header h2,
+  .section-header a {
     display: inline-block;
     background: rgba(44, 54, 80, 0.9);
     border: 2px solid #fff;
@@ -401,8 +403,10 @@ a:focus {
 .galerie {
   background: #2C3650;
   padding: 4em 0; }
-  .galerie .section-header h2 {
-    background: #161B28; }
+  .galerie .section-header h2,
+  .galerie a {
+    background: #161B28;
+    color: #fff; }
 
 .galerie-content img {
   max-width: 100%;
@@ -416,6 +420,12 @@ a:focus {
             transform: scale(1.05);
     -webkit-transition: all .3s ease;
     transition: all .3s ease; }
+
+/* přepínač textu na buttonu pro rozklinutí/skrytí galerie */
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none; }
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none; }
 
 .kontakt {
   background: #000;
@@ -433,6 +443,8 @@ a:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  .kontakt-img .profile {
+    border: 2px solid #999999; }
 
 .kontakt-info {
   -webkit-box-flex: 1;
@@ -452,9 +464,10 @@ a:focus {
     text-transform: uppercase; }
   .kontakt-info .address p {
     letter-spacing: 2px;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    color: #999999; }
   .kontakt-info .address a {
-    color: #fff; }
+    color: #999999; }
     .kontakt-info .address a:hover, .kontakt-info .address a:focus {
       color: #84A8E4; }
   .kontakt-info .address .socials-contact p {

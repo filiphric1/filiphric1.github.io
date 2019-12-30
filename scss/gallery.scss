@@ -1,8 +1,10 @@
  .galerie {
      background: $bg-clr-light;
      padding: 4em 0;
-     .section-header h2 {
+     .section-header h2,
+     a {
          background: $bg-clr-dark;
+         color: $fnt-clr;
      }
  }
  
@@ -16,5 +18,15 @@
      &:focus {
          transform: scale(1.05);
          transition: all .3s ease;
+     }
+ }
+ /* přepínač textu na buttonu pro rozklinutí/skrytí galerie */
+ 
+ [data-toggle="collapse"] {
+     &.collapsed .if-not-collapsed {
+         display: none;
+     }
+     &:not(.collapsed) .if-collapsed {
+         display: none;
      }
  }
