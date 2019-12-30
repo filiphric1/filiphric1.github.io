@@ -6,20 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Filip Hric | Kanoistika | Webdesign</title>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.jpg" type="image/png" />
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/96c5f6efc8.js" crossorigin="anonymous"></script>
-    <script src="/js/typewrite.js"></script>
-    <script src="/js/menuscroll.js"></script>
 </head>
 
 <body>
@@ -156,10 +149,11 @@
                         </div>
                     </div>
                 </div>
-                <header class="section-header">
-                    <a class="collapsed" data-toggle="collapse" href="#moreGallery" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="if-collapsed">zobrazit více</span>
-                        <span class="if-not-collapsed">zobrazit méně</span></a>
-                </header>
+                <div class="more-gallery">
+                    <a class="collapsed" data-toggle="collapse" href="#moreGallery" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="if-collapsed"><i
+                                class="fas fa-chevron-down"></i></span>
+                        <span class="if-not-collapsed"><i class="fas fa-chevron-up"></i></span></a>
+                </div>
             </div>
         </div>
     </div>
@@ -205,6 +199,19 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/96c5f6efc8.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="/js/menuscroll.js"></script>
 </body>
 
 </html>

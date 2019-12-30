@@ -403,10 +403,24 @@ a:focus {
 .galerie {
   background: #2C3650;
   padding: 4em 0; }
-  .galerie .section-header h2,
-  .galerie a {
+  .galerie .section-header h2 {
     background: #161B28;
     color: #fff; }
+  .galerie .more-gallery {
+    margin-top: 0;
+    text-align: center; }
+    .galerie .more-gallery .if-collapsed,
+    .galerie .more-gallery .if-not-collapsed {
+      background: #161B28;
+      color: #fff;
+      font-size: 2.5em;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      padding: .3em .5em; }
+      .galerie .more-gallery .if-collapsed:hover,
+      .galerie .more-gallery .if-not-collapsed:hover {
+        color: #84A8E4;
+        border: 2px solid #84A8E4; }
 
 .galerie-content img {
   max-width: 100%;
