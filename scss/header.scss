@@ -4,6 +4,14 @@
     z-index: 10;
     @include basicShadow;
     background: $bg-clr-light;
+    transition: 0.3s all;
+}
+
+.site-header-scroll {
+    background: transparentize($bg-clr-light, 0.05);
+    border-bottom: 1px solid $fnt-clr;
+    font-size: 85%;
+    transition: 0.3s all;
 }
 
 .menu-wrapper {

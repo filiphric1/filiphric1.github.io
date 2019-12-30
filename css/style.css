@@ -135,7 +135,16 @@ a:focus {
   z-index: 10;
   -webkit-box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.5);
-  background: #2C3650; }
+  background: #2C3650;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+
+.site-header-scroll {
+  background: rgba(44, 54, 80, 0.95);
+  border-bottom: 1px solid #fff;
+  font-size: 85%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
 
 .menu-wrapper {
   display: -webkit-box;
