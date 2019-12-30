@@ -146,6 +146,12 @@ a:focus {
   font-size: 85%;
   -webkit-transition: 0.3s all;
   transition: 0.3s all; }
+  @media all and (max-width: 1050px) {
+    .site-header-scroll {
+      font-size: 75%; } }
+  @media all and (max-width: 775px) {
+    .site-header-scroll {
+      font-size: 65%; } }
 
 .menu-wrapper {
   display: -webkit-box;

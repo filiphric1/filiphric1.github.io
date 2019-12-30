@@ -12,6 +12,12 @@
     border-bottom: 1px solid $fnt-clr;
     font-size: 85%;
     transition: 0.3s all;
+    @media all and (max-width: 1050px) {
+        font-size: 75%;
+    }
+    @media all and (max-width: 775px) {
+        font-size: 65%;
+    }
 }
 
 .menu-wrapper {
