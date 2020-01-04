@@ -9,14 +9,14 @@
 
 .site-header-scroll {
     background: transparentize($bg-clr-light, 0.05);
-    border-bottom: 1px solid $fnt-clr;
     font-size: 85%;
+    @include hoverShadow;
     transition: 0.3s all;
     @media all and (max-width: 1050px) {
         font-size: 75%;
     }
     @media all and (max-width: 775px) {
-        font-size: 65%;
+        font-size: 60%;
     }
 }
 
@@ -65,18 +65,27 @@
     li {
         display: inline-block;
         font-size: 1.2em;
-    }
-    a {
-        display: block;
-        color: $fnt-clr;
-        font-weight: 300;
-        padding: 1.2em;
-        scroll-behavior: smooth;
-        &:hover,
-        &:focus {
+        a {
+            display: block;
+            color: $fnt-clr;
+            font-weight: 300;
+            padding: 1.2em;
+            border: {
+                top: 5px solid transparent;
+            }
+            scroll-behavior: smooth;
+            &:hover,
+            &:focus {
+                transition: .3s ease-in-out;
+                color: $fnt-hover;
+                background: lighten($bg-clr-light, 3%);
+            }
+        }
+        .active {
             transition: .3s ease-in-out;
             color: $fnt-hover;
-            background: lighten($bg-clr-light, 3%)
+            font-weight: 700;
+            border-top: 5px solid $fnt-hover;
         }
     }
 }
