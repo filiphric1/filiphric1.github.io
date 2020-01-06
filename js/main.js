@@ -48,6 +48,6 @@ $(document).ready(function() {
 $(function() {
     $('.hamburger').click(function() {
         $('.main-menu, .socials').toggleClass(
-            'mobile', 5000);
+            'mobile');
     });
 });

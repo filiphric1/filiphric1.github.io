@@ -106,7 +106,7 @@ a:focus {
 
 .hamburger {
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 40px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
