@@ -1,80 +1,84 @@
-        @media all and (max-width: 1050px) {
-            .site-header {
-                font-size: 85%;
-            }
-            .description {
-                padding: 3em 0;
-                .description-content {
-                    -webkit-box-orient: vertical;
-                    -webkit-box-direction: normal;
-                    -ms-flex-flow: column;
-                    flex-flow: column;
-                }
-                .description-img {
-                    max-width: 75%;
-                    margin: 0 auto 2em auto;
-                    padding: 0;
-                }
-                .description-text {
-                    max-width: 75%;
-                    margin: 0 auto;
-                }
-            }
+    @media all and (max-width: 1050px) {
+        .site-header {
+            font-size: 85%;
         }
-        
-        @media all and (max-width: 1000px) {
-            .project-items {
-                flex-flow: column;
-            }
-            .section {
-                max-width: 75%;
-                margin: 0 auto;
-            }
+        .site-header-scroll {
+            font-size: 75%;
         }
-        
-        @media all and (max-width: 775px) {
-            .site-header {
-                font-size: 70%;
-            }
+        .description {
+            padding: 3em 0;
             .description-content {
-                font-size: 85%;
-            }
-            .projects {
-                font-size: 85%;
-            }
-            .galerie .section-header h2 {
-                font-size: 25px;
-            }
-            .kontakt-content {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -ms-flex-flow: column;
                 flex-flow: column;
-                text-align: center;
-                .kontakt-img {
-                    margin-bottom: 40px;
+            }
+            .description-img {
+                max-width: 75%;
+                margin: 0 auto 2em auto;
+                padding: 0;
+            }
+            .description-text {
+                max-width: 75%;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    @media all and (max-width: 1000px) {
+        .project-items {
+            flex-flow: column;
+        }
+        .section {
+            max-width: 75%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media all and (max-width: 775px) {
+        .menu-wrapper {
+            .logo-wrapper {
+                flex: 50%;
+                text-align: left;
+                padding: {
+                    left: 15px;
+                    top: 7px;
+                }
+            }
+            .hamburger {
+                flex: 50%;
+                display: block;
+            }
+            .main-menu {
+                flex: 100%;
+                li {
+                    display: block;
                 }
             }
         }
-        
-        @media all and (max-width: 580px) {
-            .site-header {
-                position: relative;
-            }
-            .logo-wrapper {
-                order: 1;
-            }
-            .main-menu {
-                order: 3;
-                width: 100%
-            }
-            .socials {
-                order: 2;
-            }
-            .main-menu li {
-                display: block;
-            }
-            .post-header {
-                padding: 3em;
+        .description-content {
+            font-size: 85%;
+        }
+        .projects {
+            font-size: 85%;
+        }
+        .galerie .section-header h2 {
+            font-size: 25px;
+        }
+        .kontakt-content {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+            flex-flow: column;
+            text-align: center;
+            .kontakt-img {
+                margin-bottom: 40px;
             }
         }
+    }
+    
+    @media all and (max-width: 580px) {
+        .post-header {
+            padding: 3em;
+        }
+    }

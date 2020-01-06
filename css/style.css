@@ -1,78 +1,4 @@
 @charset "UTF-8";
-@media all and (max-width: 1050px) {
-  .site-header {
-    font-size: 85%; }
-
-  .description {
-    padding: 3em 0; }
-    .description .description-content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-      flex-flow: column; }
-    .description .description-img {
-      max-width: 75%;
-      margin: 0 auto 2em auto;
-      padding: 0; }
-    .description .description-text {
-      max-width: 75%;
-      margin: 0 auto; } }
-@media all and (max-width: 1000px) {
-  .project-items {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column; }
-
-  .section {
-    max-width: 75%;
-    margin: 0 auto; } }
-@media all and (max-width: 775px) {
-  .site-header {
-    font-size: 70%; }
-
-  .description-content {
-    font-size: 85%; }
-
-  .projects {
-    font-size: 85%; }
-
-  .galerie .section-header h2 {
-    font-size: 25px; }
-
-  .kontakt-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    text-align: center; }
-    .kontakt-content .kontakt-img {
-      margin-bottom: 40px; } }
-@media all and (max-width: 580px) {
-  .site-header {
-    position: relative; }
-
-  .logo-wrapper {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-
-  .main-menu {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 100%; }
-
-  .socials {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
-
-  .main-menu li {
-    display: block; }
-
-  .post-header {
-    padding: 3em; } }
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -155,6 +81,7 @@ a:focus {
       font-size: 60%; } }
 
 .menu-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,6 +103,21 @@ a:focus {
           flex: 1 0 auto;
   margin: .2em 0;
   text-align: center; }
+
+.hamburger {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: none;
+  cursor: pointer; }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px; }
 
 .logo {
   color: #fff;
@@ -237,6 +179,12 @@ a:focus {
       color: #84A8E4; }
     .socials a .fab {
       margin: .7em .3em; }
+
+.display-none {
+  display: none; }
+
+.display {
+  display: block; }
 
 .post-header {
   width: 100%;
@@ -513,5 +461,77 @@ a:focus {
     letter-spacing: 1px;
     padding: .4em 0;
     margin: 0; }
+
+@media all and (max-width: 1050px) {
+  .site-header {
+    font-size: 85%; }
+
+  .site-header-scroll {
+    font-size: 75%; }
+
+  .description {
+    padding: 3em 0; }
+    .description .description-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column; }
+    .description .description-img {
+      max-width: 75%;
+      margin: 0 auto 2em auto;
+      padding: 0; }
+    .description .description-text {
+      max-width: 75%;
+      margin: 0 auto; } }
+@media all and (max-width: 1000px) {
+  .project-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+
+  .section {
+    max-width: 75%;
+    margin: 0 auto; } }
+@media all and (max-width: 775px) {
+  .menu-wrapper .logo-wrapper {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 7px; }
+  .menu-wrapper .hamburger {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    display: block; }
+  .menu-wrapper .main-menu {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%; }
+    .menu-wrapper .main-menu li {
+      display: block; }
+
+  .description-content {
+    font-size: 85%; }
+
+  .projects {
+    font-size: 85%; }
+
+  .galerie .section-header h2 {
+    font-size: 25px; }
+
+  .kontakt-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    text-align: center; }
+    .kontakt-content .kontakt-img {
+      margin-bottom: 40px; } }
+@media all and (max-width: 580px) {
+  .post-header {
+    padding: 3em; } }
 
 /*# sourceMappingURL=style.css.map */

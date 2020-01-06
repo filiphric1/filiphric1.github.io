@@ -21,6 +21,7 @@
 }
 
 .menu-wrapper {
+    position: relative;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -32,6 +33,21 @@
     flex: 1 0 auto;
     margin: .2em 0;
     text-align: center;
+}
+
+.hamburger {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    flex: 1 0 auto;
+    display: none;
+    cursor: pointer;
+    .line {
+        width: 30px;
+        height: 3px;
+        background: $fnt-clr;
+        margin: 5px;
+    }
 }
 
 .logo {
@@ -105,4 +121,12 @@
             margin: .7em .3em;
         }
     }
+}
+
+.display-none {
+    display: none;
+}
+
+.display {
+    display: block;
 }

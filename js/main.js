@@ -30,3 +30,24 @@ $(function() {
             'active');
     });
 });
+// Při zobrazení hamburger buttonu skrýt menu a socials
+function resize() {
+    if ($(window).width() <= 760) {
+        $('.main-menu, .socials').addClass(
+            'display-none');
+    } else {
+        $('.main-menu, .socials').removeClass(
+            'display-none');
+    }
+}
+$(document).ready(function() {
+    $(window).resize(resize);
+    resize();
+});
+// Rozkrytí/skrytí menu přes hamburger
+$(function() {
+    $('.hamburger').click(function() {
+        $('.main-menu, .socials').toggleClass(
+            'display-none');
+    });
+});
