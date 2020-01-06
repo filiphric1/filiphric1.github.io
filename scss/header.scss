@@ -37,8 +37,8 @@
 
 .hamburger {
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 20px;
+    right: 40px;
     flex: 1 0 auto;
     display: none;
     cursor: pointer;
@@ -123,10 +123,7 @@
     }
 }
 
-.display-none {
+.mobile {
     display: none;
-}
-
-.display {
-    display: block;
+    transition: all 1s ease-in-out;
 }

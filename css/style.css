@@ -106,8 +106,8 @@ a:focus {
 
 .hamburger {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 20px;
+  right: 40px;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -180,11 +180,10 @@ a:focus {
     .socials a .fab {
       margin: .7em .3em; }
 
-.display-none {
-  display: none; }
-
-.display {
-  display: block; }
+.mobile {
+  display: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
 
 .post-header {
   width: 100%;
@@ -494,24 +493,24 @@ a:focus {
     max-width: 75%;
     margin: 0 auto; } }
 @media all and (max-width: 775px) {
-  .menu-wrapper .logo-wrapper {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 7px; }
-  .menu-wrapper .hamburger {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    display: block; }
-  .menu-wrapper .main-menu {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%; }
-    .menu-wrapper .main-menu li {
+  .menu-wrapper {
+    padding: 5px 30px; }
+    .menu-wrapper .logo-wrapper {
+      -webkit-box-flex: 50%;
+          -ms-flex: 50%;
+              flex: 50%;
+      text-align: left; }
+    .menu-wrapper .hamburger {
+      -webkit-box-flex: 50%;
+          -ms-flex: 50%;
+              flex: 50%;
       display: block; }
+    .menu-wrapper .main-menu {
+      -webkit-box-flex: 100%;
+          -ms-flex: 100%;
+              flex: 100%; }
+      .menu-wrapper .main-menu li {
+        display: block; }
 
   .description-content {
     font-size: 85%; }
@@ -530,8 +529,5 @@ a:focus {
     text-align: center; }
     .kontakt-content .kontakt-img {
       margin-bottom: 40px; } }
-@media all and (max-width: 580px) {
-  .post-header {
-    padding: 3em; } }
 
 /*# sourceMappingURL=style.css.map */

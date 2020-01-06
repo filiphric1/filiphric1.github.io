@@ -34,10 +34,10 @@ $(function() {
 function resize() {
     if ($(window).width() <= 760) {
         $('.main-menu, .socials').addClass(
-            'display-none');
+            'mobile');
     } else {
         $('.main-menu, .socials').removeClass(
-            'display-none');
+            'mobile');
     }
 }
 $(document).ready(function() {
@@ -48,6 +48,6 @@ $(document).ready(function() {
 $(function() {
     $('.hamburger').click(function() {
         $('.main-menu, .socials').toggleClass(
-            'display-none');
+            'mobile', 5000);
     });
 });
