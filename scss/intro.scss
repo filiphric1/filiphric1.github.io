@@ -28,6 +28,7 @@
 }
 
 .author-h1 {
+    color: $bg-clr-dark;
     display: inline-block;
     background: transparentize($fnt-clr, 0.7);
     border-radius: 1em;
@@ -47,7 +48,7 @@
         cursor: default;
     }
     span {
-        color: $bg-clr-dark;
+        color: $fnt-clr;
     }
 }
 
