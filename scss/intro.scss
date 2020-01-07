@@ -4,7 +4,7 @@
     background: url('/img/cover.jpg') bottom center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px transparentize($bg-clr-light, 0.3);
+    box-shadow: inset 0 0 0 1000px transparentize($bg-clr-light, 0.5);
 }
 
 .intro {
@@ -28,9 +28,11 @@
 
 .author-h1 {
     display: inline-block;
+    background: transparentize($fnt-clr, 0.7);
+    border-radius: 1em;
     font: {
-        size: 1.6em;
-        weight: 300;
+        size: 2.5em;
+        weight: 500;
     }
     text: {
         transform: uppercase;
@@ -39,14 +41,12 @@
     letter-spacing: .1em;
     margin: 2em auto 4em auto;
     padding: .8em;
-    background: $bg-clr-light;
-    border: solid 2px $fnt-clr;
-    border-radius: 1em;
-    @include basicShadow;
     &:hover,
     &:focus {
-        @include hoverShadow;
         cursor: default;
+    }
+    span {
+        color: $bg-clr-dark;
     }
 }
 
