@@ -26,6 +26,9 @@
     }
     
     @media all and (max-width: 1000px) {
+        .author-h1 {
+            font-size: 2em;
+        }
         .project-items {
             flex-flow: column;
         }
@@ -53,8 +56,11 @@
                 }
             }
         }
+        .author-h1 {
+            font-size: 1.5em;
+        }
         .description-content {
-            font-size: 85%;
+            font-size: 1.5em;
         }
         .projects {
             font-size: 85%;
