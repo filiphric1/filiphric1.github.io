@@ -1,27 +1,10 @@
 .post-header {
     width: 100%;
     padding: 10em 0 3em 0;
-    video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -2;
-    }
-    &:before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 300%;
-        background: transparentize($bg-clr-light, 0.2);
-        display: block;
-        z-index: -1;
-    }
+    background: url('/img/cover.jpg') bottom center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px transparentize($bg-clr-light, 0.3);
 }
 
 .intro {
@@ -43,7 +26,7 @@
     }
 }
 
-.typewrite {
+.author-h1 {
     display: inline-block;
     font: {
         size: 1.6em;
@@ -65,4 +48,8 @@
         @include hoverShadow;
         cursor: default;
     }
+}
+
+.rotating-text {
+    display: inline;
 }

@@ -38,10 +38,11 @@
 .hamburger {
     position: absolute;
     top: 22px;
-    right: 40px;
+    right: 27px;
     flex: 1 0 auto;
     display: none;
     cursor: pointer;
+    transition: .3s ease-in-out;
     .line {
         width: 30px;
         height: 3px;
@@ -78,6 +79,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
+    transition: .3s ease-in-out;
     li {
         display: inline-block;
         font-size: 1.2em;
