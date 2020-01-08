@@ -215,7 +215,7 @@ a:focus {
             box-shadow: 0px 0px 1em black; }
 
 .author-h1 {
-  color: #161B28;
+  color: #fff;
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 1em;
@@ -228,11 +228,20 @@ a:focus {
   padding: .7em; }
   .author-h1:hover, .author-h1:focus {
     cursor: default; }
-  .author-h1 span {
-    color: #fff; }
-
-.rotating-text {
-  display: inline; }
+  .author-h1 span:nth-child(1) {
+    display: inline-block;
+    color: #2C3650;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; }
+  .author-h1 span:nth-child(2) {
+    display: inline-block;
+    color: #c98200;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s; }
 
 .description {
   background: #2C3650;
