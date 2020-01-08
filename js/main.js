@@ -100,23 +100,22 @@ function highlightNavigation() {
                 // add .active class to the current link
                 $navigationLink.addClass('active');
             }
+            // přidání třídy active sekci kontakt při scrollu na konec stránky
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $navigationLinks.removeClass('active');
+                $('.scrollFix').addClass(
+                    'active');
+            } else {
+                $('.scrollFix').removeClass(
+                    'active');
 
+            }
             // we have found our section, so we return false to exit the each loop
             return false;
         }
+
+
     });
 }
 
-$(window).scroll(throttle(highlightNavigation, 500));
-
-// Fix pro označení kontaktu, i když scrolltop není v jeho sekci
-$(window).scroll(function() {
-    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        $navigationLinks.removeClass('active');
-        $('.scrollFix').addClass(
-            'active');
-    } else {
-        $('.scrollFix').removeClass(
-            'active');
-    }
-});
+$(window).scroll(throttle(highlightNavigation, 300));
