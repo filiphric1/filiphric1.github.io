@@ -11,7 +11,7 @@
     background: transparentize($bg-clr-light, 0.05);
     font-size: 85%;
     @include hoverShadow;
-    transition: 0.3s all;
+    transition: 0.5s all ease-in-out;
     @media all and (max-width: 1050px) {
         font-size: 75%;
     }
