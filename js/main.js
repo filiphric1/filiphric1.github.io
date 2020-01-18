@@ -3,15 +3,11 @@ $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() >
             50) {
-            $('.site-header').addClass(
-                'site-header-scroll'
-            );
+            $('.site-header').addClass('site-header-scroll');
         }
         if ($(this).scrollTop() <
             50) {
-            $('.site-header').removeClass(
-                'site-header-scroll'
-            );
+            $('.site-header').removeClass('site-header-scroll');
         }
     });
 });
@@ -32,11 +28,9 @@ $(function() {
 // Při zobrazení hamburger buttonu skrýt menu a socials
 function resize() {
     if ($(window).width() <= 760) {
-        $('.main-menu, .socials').addClass(
-            'mobile');
+        $('.main-menu, .socials').addClass('mobile');
     } else {
-        $('.main-menu, .socials').removeClass(
-            'mobile');
+        $('.main-menu, .socials').removeClass('mobile');
     }
 }
 $(document).ready(function() {
@@ -46,8 +40,7 @@ $(document).ready(function() {
 // Rozkrytí/skrytí menu přes hamburger
 $(function() {
     $('.hamburger').click(function() {
-        $('.main-menu, .socials').toggleClass(
-            'mobile');
+        $('.main-menu, .socials').toggleClass('mobile');
     });
 });
 // Označení active linku v menu při kliknutí/scrollování na sekci
@@ -107,14 +100,11 @@ function highlightNavigation() {
                 $navigationLink.addClass('active');
             }
             // přidání třídy active sekci kontakt při scrollu na konec stránky
-            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            if ($(window).scrollTop() + $(window).height() > $(document).height()) {
                 $navigationLinks.removeClass('active');
-                $('.scrollFix').addClass(
-                    'active');
+                $('.scrollFix').addClass('active');
             } else {
-                $('.scrollFix').removeClass(
-                    'active');
-
+                $('.scrollFix').removeClass('active');
             }
             // we have found our section, so we return false to exit the each loop
             return false;
