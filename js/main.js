@@ -15,6 +15,12 @@ $(function() {
         }
     });
 });
+// Ošetření smrklého menu při načtení již zascrollované stránky
+$(function() {
+    if ($(window).scrollTop() > 50) {
+        $('.site-header').addClass('site-header-scroll');
+    }
+});
 
 // Při kliknutí na logo odznačení aktivního linku v menu
 $(function() {
@@ -117,5 +123,28 @@ function highlightNavigation() {
 
     });
 }
-
 $(window).scroll(throttle(highlightNavigation, 300));
+
+// lightbox galerie
+var overlay = $('<div/>', { id: 'overlay' }),
+    gallery = $('.galerie-content');
+overlay.appendTo('body').hide();
+
+gallery.find('a').on('click', function(event) {
+    var href = $(this).attr('href'),
+        image = $('<img>', { src: href });
+    overlay.html(image).show();
+
+    event.preventDefault();
+});
+overlay.on('click', function() {
+    overlay.hide();
+});
+// šipka pro návrat nahoru stránky
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 400) {
+        $('.footer a').removeClass('btn-top-hide');
+    } else {
+        $('.footer a').addClass('btn-top-hide');
+    }
+});
