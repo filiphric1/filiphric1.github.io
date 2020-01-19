@@ -36,6 +36,9 @@
             max-width: 75%;
             margin: 0 auto;
         }
+        .footer .back-to-top {
+            display: none;
+        }
     }
     
     @media all and (max-width: 775px) {
@@ -79,6 +82,16 @@
             text-align: center;
             .kontakt-img {
                 margin-bottom: 40px;
+            }
+        }
+    }
+    
+    @media all and (max-width: 576px) {
+        #overlay {
+            display: none;
+            z-index: -20;
+            img {
+                display: none;
             }
         }
     }

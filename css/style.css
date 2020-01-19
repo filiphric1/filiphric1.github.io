@@ -534,7 +534,10 @@ button:focus {
 
   .section {
     max-width: 75%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .footer .back-to-top {
+    display: none; } }
 @media all and (max-width: 775px) {
   .menu-wrapper {
     padding: 5px 30px; }
@@ -577,5 +580,11 @@ button:focus {
     text-align: center; }
     .kontakt-content .kontakt-img {
       margin-bottom: 40px; } }
+@media all and (max-width: 576px) {
+  #overlay {
+    display: none;
+    z-index: -20; }
+    #overlay img {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */
