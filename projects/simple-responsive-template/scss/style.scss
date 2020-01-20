@@ -5,6 +5,7 @@ VARIABLES
 $fnt-clr:#666;
 $h2-clr:#333;
 $menu-clr: #0099ff;
+$btn-hover:#8EBD01;
 $bg-clr: #fff;
 $bg-pst-hd:#f3f3f3;
 $pst-hd-br: #e2e2e2;
@@ -163,6 +164,9 @@ POST HEADER
             text-transform: uppercase;
             margin: em(10) em(15) em(10) 0;
             padding: em(10);
+            &:hover {
+                background: $btn-hover;
+            }
         }
     }
 }
