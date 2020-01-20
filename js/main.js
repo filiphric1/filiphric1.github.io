@@ -101,7 +101,8 @@ $(document).ready(function() {
                     $navigationLink.addClass('active');
                 }
                 // přidání třídy active sekci kontakt při scrollu na konec stránky
-                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                if ($(window).scrollTop() + $(window).height() > $(document).height() -
+                    2) {
                     $navigationLinks.removeClass('active');
                     $('.scrollFix').addClass('active');
                 } else {
