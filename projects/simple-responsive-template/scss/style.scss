@@ -1,0 +1,168 @@
+/* ======================================================================================
+VARIABLES
+======================================================================================*/
+
+$fnt-clr:#666;
+$h2-clr:#333;
+$menu-clr: #0099ff;
+$bg-clr: #fff;
+$bg-pst-hd:#f3f3f3;
+$pst-hd-br: #e2e2e2;
+
+/* ======================================================================================
+EM CALC
+======================================================================================*/
+
+$browser-context: 16; // Default
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+
+/* ======================================================================================
+OBECNÉ
+======================================================================================*/
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 100%;
+    color: $fnt-clr;
+    background: $bg-clr;
+}
+
+h1 {
+    color: $h2-clr;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+button:active,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    max-width: em(1200);
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* Clearfix */
+
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after {
+    content: " ";
+    display: table;
+}
+
+.container:after,
+.group:after,
+.main:after {
+    clear: both;
+}
+
+.container,
+.group,
+.main {
+    *zoom: 1;
+}
+
+
+/* ======================================================================================
+HEADER
+======================================================================================*/
+
+.site-header {
+    margin: .75em 0;
+}
+
+.site-header-content {
+    .logo {
+        max-width: 40%;
+        float: left;
+    }
+    .site-menu {
+        max-width: 60%;
+        float: right;
+    }
+}
+
+.nav {
+    padding: em(9) 0;
+    .nav-item {
+        a {
+            color: $menu-clr;
+            display: block;
+            font-size: 1em;
+            padding: em(10) em(20);
+            border: solid 1px #fff;
+            &:hover,
+            &:focus {
+                color: $bg-clr;
+                background: $menu-clr;
+            }
+        }
+        .selected {
+            color: $bg-clr;
+            background: $menu-clr;
+        }
+    }
+}
+
+
+/* ======================================================================================
+POST HEADER
+======================================================================================*/
+
+.post-header {
+    padding: em(32);
+    background: $bg-pst-hd;
+    border-top: solid 1px $pst-hd-br;
+    border-bottom: solid 1px $pst-hd-br;
+}
+
+.post-header-text {
+    margin: 1em 0;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        a {
+            display: block;
+            color: $bg-clr;
+            background: $menu-clr;
+            border-radius: em(7);
+            text-transform: uppercase;
+            margin: em(10) em(15) em(10) 0;
+            padding: em(10);
+        }
+    }
+}
