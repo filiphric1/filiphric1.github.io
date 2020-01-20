@@ -101,7 +101,7 @@ $(document).ready(function() {
                     $navigationLink.addClass('active');
                 }
                 // přidání třídy active sekci kontakt při scrollu na konec stránky
-                if ($(window).scrollTop() + $(window).height() > $(document).height()) {
+                if ($(window).scrollTop() + $(window).height() == $(document).height()) {
                     $navigationLinks.removeClass('active');
                     $('.scrollFix').addClass('active');
                 } else {
@@ -134,9 +134,9 @@ $(document).ready(function() {
     // šipka pro návrat nahoru stránky
     $(window).scroll(function() {
         if ($(window).scrollTop() > 400) {
-            $('.footer a').removeClass('btn-top-hide');
+            $('.back-to-top').removeClass('back-to-top-hide');
         } else {
-            $('.footer a').addClass('btn-top-hide');
+            $('.back-to-top').addClass('back-to-top-hide');
         }
     });
 });
