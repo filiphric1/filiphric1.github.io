@@ -170,3 +170,38 @@ POST HEADER
         }
     }
 }
+
+
+/* ======================================================================================
+THREE SECTIONS
+======================================================================================*/
+
+.three-sections-content {
+    padding: em(40) 0;
+    .section-heading {
+        margin-bottom: em(10);
+    }
+    .travel-img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: em(5);
+    }
+}
+
+
+/* ======================================================================================
+FOOTER
+======================================================================================*/
+
+.site-footer {
+    background: darken($fnt-clr, 20%);
+    padding: em(30) 0;
+    p {
+        font-size: em(14);
+        margin: 0;
+        a {
+            color: lighten($fnt-clr, 20%);
+            text-decoration: underline;
+        }
+    }
+}
