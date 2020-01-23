@@ -40,10 +40,10 @@ button:focus {
   text-decoration: none;
   outline: none; }
 
-.container {
-  max-width: 75em;
+.wrapper {
+  max-width: 78.75em;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 1.875em; }
 
 /* Clearfix */
 .container:before,
@@ -146,5 +146,34 @@ FOOTER
     .site-footer p a {
       color: #999999;
       text-decoration: underline; }
+
+/* ======================================================================================
+GALLERY
+======================================================================================*/
+.gallery-wrapper {
+  background: #f3f3f3;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 2em; }
+
+.filter-button {
+  display: inline-block;
+  color: #fff;
+  background: #0099ff;
+  border-radius: 0.4375em;
+  text-transform: uppercase;
+  margin: 0.625em 0.3125em 0.625em 0;
+  padding: 0.625em; }
+  .filter-button:hover {
+    background: #8EBD01; }
+
+.active {
+  color: red; }
+
+.port-image {
+  width: 100%; }
+
+.gallery_product {
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,10 +61,10 @@ button:focus {
     outline: none;
 }
 
-.container {
-    max-width: em(1200);
+.wrapper {
+    max-width: em(1260);
     margin: 0 auto;
-    padding: 0;
+    padding: 0 em(30);
 }
 
 
@@ -204,4 +204,41 @@ FOOTER
             text-decoration: underline;
         }
     }
+}
+
+
+/* ======================================================================================
+GALLERY
+======================================================================================*/
+
+.gallery-wrapper {
+    background: $bg-pst-hd;
+    border-top: 1px solid $pst-hd-br;
+    border-bottom: 1px solid $pst-hd-br;
+    padding: em(32);
+}
+
+.filter-button {
+    display: inline-block;
+    color: $bg-clr;
+    background: $menu-clr;
+    border-radius: em(7);
+    text-transform: uppercase;
+    margin: em(10) em(5) em(10) 0;
+    padding: em(10);
+    &:hover {
+        background: $btn-hover;
+    }
+}
+
+.active {
+    color: red;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 30px;
 }
