@@ -58,6 +58,14 @@
         max-width: 100%;
         height: auto;
     }
+    .icons {
+        display: block;
+        .fab,
+        .fas {
+            font-size: 2em;
+            margin-right: .3em;
+        }
+    }
 }
 
 .button-project {

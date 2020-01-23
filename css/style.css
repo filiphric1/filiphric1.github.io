@@ -363,6 +363,12 @@ button:focus {
             box-sizing: border-box;
     max-width: 100%;
     height: auto; }
+  .section .icons {
+    display: block; }
+    .section .icons .fab,
+    .section .icons .fas {
+      font-size: 2em;
+      margin-right: .3em; }
 
 .button-project {
   display: inline-block;
