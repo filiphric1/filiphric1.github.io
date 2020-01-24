@@ -71,12 +71,16 @@ HEADER
 .site-header {
   margin: .75em 0; }
 
-.site-header-content .logo {
-  max-width: 40%;
-  float: left; }
-.site-header-content .site-menu {
-  max-width: 60%;
-  float: right; }
+.site-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-header-content .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .site-header-content .site-menu {
+    margin-left: auto; }
 
 .nav {
   padding: 0.5625em 0; }
@@ -93,6 +97,37 @@ HEADER
     color: #fff;
     background: #0099ff; }
 
+.hamburger {
+  position: absolute;
+  top: 1.875em;
+  right: 2.1875em;
+  display: none;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #0099ff;
+    margin: 5px; }
+
+.mobile {
+  display: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
+@media all and (max-width: 1009px) {
+  .site-header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    .site-header-content .site-menu {
+      margin: 0 auto; }
+    .site-header-content .nav-item {
+      display: block; }
+    .site-header-content .hamburger {
+      display: inline-block; } }
 /* ======================================================================================
 POST HEADER
 ======================================================================================*/
@@ -154,7 +189,8 @@ GALLERY
   background: #f3f3f3;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
-  padding: 2em; }
+  padding: 2em;
+  text-align: center; }
 
 .filter-button {
   display: inline-block;
@@ -167,13 +203,10 @@ GALLERY
   .filter-button:hover {
     background: #8EBD01; }
 
-.active {
-  color: red; }
-
-.port-image {
-  width: 100%; }
-
 .gallery_product {
-  margin-bottom: 30px; }
+  margin-bottom: 1.875em; }
+  .gallery_product img {
+    max-width: 100%;
+    height: auto; }
 
 /*# sourceMappingURL=style.css.map */

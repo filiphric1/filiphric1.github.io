@@ -21,3 +21,22 @@ $(document).ready(function() {
     $(this).addClass("active");
 
 });
+
+// Při zobrazení hamburger buttonu skrýt menu a socials
+function resize() {
+    if ($(window).width() <= 760) {
+        $('.site-menu').addClass('mobile');
+    } else {
+        $('.site-menu').removeClass('mobile');
+    }
+}
+$(document).ready(function() {
+    $(window).resize(resize);
+    resize();
+});
+// Rozkrytí/skrytí menu přes hamburger
+$(function() {
+    $('.hamburger').click(function() {
+        $('.site-menu').toggleClass('mobile');
+    });
+});
