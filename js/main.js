@@ -117,21 +117,6 @@ $(document).ready(function() {
     }
     $(window).scroll(throttle(highlightNavigation, 300));
 
-    // lightbox galerie
-    var overlay = $('<div/>', { id: 'overlay' }),
-        gallery = $('.galerie-content');
-    overlay.appendTo('body').hide();
-
-    gallery.find('a').on('click', function(event) {
-        var href = $(this).attr('href'),
-            image = $('<img>', { src: href });
-        overlay.html(image).show();
-
-        event.preventDefault();
-    });
-    overlay.on('click', function() {
-        overlay.hide();
-    });
     // šipka pro návrat nahoru stránky
     $(window).scroll(function() {
         if ($(window).scrollTop() > 400) {

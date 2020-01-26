@@ -116,7 +116,7 @@ HEADER
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
-@media all and (max-width: 1009px) {
+@media all and (max-width: 992px) {
   .site-header-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

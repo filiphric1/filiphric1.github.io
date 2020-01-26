@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 // Při zobrazení hamburger buttonu skrýt menu a socials
 function resize() {
-    if ($(window).width() <= 760) {
+    if ($(window).width() < 975) {
         $('.site-menu').addClass('mobile');
     } else {
         $('.site-menu').removeClass('mobile');
