@@ -1,3 +1,4 @@
+// Filtrování v galerii
 $(document).ready(function() {
 
     $(".filter-button").click(function() {
