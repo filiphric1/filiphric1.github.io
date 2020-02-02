@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   max-width: 100%;
   color: #666;
   background: #fff; }
@@ -29,7 +29,7 @@ body {
 h1 {
   color: #333;
   margin: 0;
-  font-family: 'PT Serif', serif; }
+  font-family: "PT Serif", serif; }
 
 a,
 a:hover,
@@ -69,7 +69,7 @@ button:focus {
 HEADER
 ======================================================================================*/
 .site-header {
-  margin: .75em 0; }
+  margin: 0.75em 0; }
 
 .site-header-content {
   display: -webkit-box;
@@ -103,8 +103,8 @@ HEADER
   right: 2.1875em;
   display: none;
   cursor: pointer;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
   .hamburger .line {
     width: 30px;
     height: 3px;
@@ -155,19 +155,22 @@ POST HEADER
       margin: 0.625em 0.9375em 0.625em 0;
       padding: 0.625em; }
       .buttons li a:hover {
-        background: #8EBD01; }
+        background: #8ebd01; }
 
 /* ======================================================================================
 THREE SECTIONS
 ======================================================================================*/
-.three-sections-content {
+.three-sections-content,
+.article-content {
   padding: 2.5em 0; }
-  .three-sections-content .section-heading {
+  .three-sections-content .section-heading,
+  .article-content .section-heading {
     margin-bottom: 0.625em; }
-  .three-sections-content .travel-img {
-    max-width: 100%;
+  .three-sections-content .travel-img,
+  .article-content .travel-img {
+    max-width: 75%;
     height: auto;
-    margin-bottom: 0.3125em; }
+    margin: 0.3125em auto; }
 
 /* ======================================================================================
 FOOTER
@@ -201,12 +204,31 @@ GALLERY
   margin: 0.625em 0.3125em 0.625em 0;
   padding: 0.625em; }
   .filter-button:hover {
-    background: #8EBD01; }
+    background: #8ebd01; }
 
 .gallery_product {
   margin-bottom: 1.875em; }
   .gallery_product img {
     max-width: 100%;
     height: auto; }
+
+/* ======================================================================================
+REGISTRATION
+======================================================================================*/
+.form {
+  text-align: left;
+  margin: 4.375em 0; }
+
+.registration {
+  padding: 5em 0; }
+
+.article-buttons {
+  text-align: center; }
+
+.article-content {
+  text-align: center; }
+  .article-content p,
+  .article-content h1 {
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

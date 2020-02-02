@@ -1,134 +1,131 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simple Responsive Template</title>
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <div class="site-header">
-        <div class="wrapper">
-            <div class="site-header-content">
-                <div class="logo">
-                    <a href="index.html"><img src="img/page-logo.svg" alt="Logo stránky"></a>
-                </div>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="site-menu">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="index.html">Domů</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Produkty</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="galerie.html" class="selected">Galerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">O nás</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="wrapper">
+        <div class="site-header-content">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/page-logo.svg" alt="Logo stránky"
+            /></a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="site-menu">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html">Domů</a>
+              </li>
+              <li class="nav-item">
+                <a href="galerie.html" class="selected">Galerie</a>
+              </li>
+              <li class="nav-item">
+                <a href="clanky/">Články</a>
+              </li>
+              <li class="nav-item">
+                <a href="registrace.html">Registrace</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <div class="gallery-wrapper">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xs-12">
-                    <button class="btn btn-default filter-button" data-filter="all">Vše</button>
-                    <button class="btn btn-default filter-button" data-filter="water">Voda</button>
-                    <button class="btn btn-default filter-button" data-filter="woods">Les</button>
-                    <button class="btn btn-default filter-button" data-filter="peaks">Hory</button>
-                    <button class="btn btn-default filter-button" data-filter="dunes">Poušť</button>
-                </div>
-            </div>
-
-
-            <div class="row">
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
-                    <img src="img/water2.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
-                    <img src="img/water3.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
-                    <img src="img/water4.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
-                    <img src="img/water5.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
-                    <img src="img/tree2.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
-                    <img src="img/tree3.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
-                    <img src="img/tree4.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
-                    <img src="img/tree5.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
-                    <img src="img/peak3.jpg" class="img-responsive">
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
-                    <img src="img/peak4.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
-                    <img src="img/peak5.jpg" class="img-responsive">
-                </div>
-                <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter dunes">
-                    <img src="img/desert1.jpg" class="img-responsive">
-                </div>
-
-
-
-
-
-
-
-
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xs-12">
+            <button class="btn btn-default filter-button" data-filter="all">
+              Vše
+            </button>
+            <button class="btn btn-default filter-button" data-filter="water">
+              Voda
+            </button>
+            <button class="btn btn-default filter-button" data-filter="woods">
+              Les
+            </button>
+            <button class="btn btn-default filter-button" data-filter="peaks">
+              Hory
+            </button>
+            <button class="btn btn-default filter-button" data-filter="dunes">
+              Poušť
+            </button>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
+            <img src="img/water2.jpg" class="img-responsive" />
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
+            <img src="img/water3.jpg" class="img-responsive" />
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
+            <img src="img/water4.jpg" class="img-responsive" />
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter water">
+            <img src="img/water5.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
+            <img src="img/tree2.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
+            <img src="img/tree3.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
+            <img src="img/tree4.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter woods">
+            <img src="img/tree5.jpg" class="img-responsive" />
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
+            <img src="img/peak3.jpg" class="img-responsive" />
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
+            <img src="img/peak4.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter peaks">
+            <img src="img/peak5.jpg" class="img-responsive" />
+          </div>
+          <div class="gallery_product col-lg-4 col-md-6 col-sm-12 filter dunes">
+            <img src="img/desert1.jpg" class="img-responsive" />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="site-footer">
-        <div class="container">
-            <div class="site-footer-content">
-                <p>design by <a href="#">&copy; Simple Responsive Template</a></p>
-            </div>
+      <div class="container">
+        <div class="site-footer-content">
+          <p>design by <a href="#">&copy; Simple Responsive Template</a></p>
         </div>
+      </div>
     </div>
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
