@@ -164,6 +164,11 @@ HEADER
     }
   }
 }
+@media all and (max-width: 480px) {
+  .nav-item {
+    font-size: 80%;
+  }
+}
 
 /* ======================================================================================
 POST HEADER
@@ -284,10 +289,20 @@ REGISTRATION
   text-align: center;
 }
 
+/* ======================================================================================
+ARTICLES
+======================================================================================*/
+
 .article-content {
   text-align: center;
   p,
   h1 {
     text-align: left;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .article-buttons li {
+    display: block;
   }
 }

@@ -128,6 +128,9 @@ HEADER
       display: block; }
     .site-header-content .hamburger {
       display: inline-block; } }
+@media all and (max-width: 480px) {
+  .nav-item {
+    font-size: 80%; } }
 /* ======================================================================================
 POST HEADER
 ======================================================================================*/
@@ -225,10 +228,17 @@ REGISTRATION
 .article-buttons {
   text-align: center; }
 
+/* ======================================================================================
+ARTICLES
+======================================================================================*/
 .article-content {
   text-align: center; }
   .article-content p,
   .article-content h1 {
     text-align: left; }
+
+@media all and (max-width: 400px) {
+  .article-buttons li {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
