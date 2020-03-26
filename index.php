@@ -253,7 +253,7 @@
     <div class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; Filip Hric <?php echo date("Y"); ?> | Všechna práva vyhrazena</p>
+                <p>&copy; Filip Hric <?php echo date("M-Y"); ?> | Všechna práva vyhrazena</p>
             </div>
         </div>
     </div>
