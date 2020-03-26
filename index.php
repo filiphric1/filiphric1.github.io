@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.jpg" type="image/png" />
@@ -37,8 +37,7 @@
                 <div class="socials">
                     <a href="https://www.facebook.com/FilipHric1" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/fifahric/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/filip-hric-01a68813b/" target="_blank"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/filip-hric-01a68813b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -67,9 +66,14 @@
                 </div>
                 <div class="description-text">
                     <p>
-                        <span class="article-h">O mně</span><br />Jsem 26-letý kajakář z Olomouce a věnuji se sjezdu na divoké vodě v kategorii K1, ve kterém se soutěží v dlouhém závodě a sprintu. Největším úspěchem v roce 2018 bylo 2. místo z Mistrovství
-                        světa, dále 2x titul Mistra ČR v individuálních závodech a celkové vítězství v Českém poháru.
-                        <br> V letošní sezóně se mi podařilo dosáhnout na 2. místo na Mistrovství Evropy a na 3. místo na Mistrovství světa.
+                        <span class="article-h">O mně</span><br />Jsem 26-letý kajakář z
+                        Olomouce a věnuji se sjezdu na divoké vodě v kategorii K1, ve
+                        kterém se soutěží v dlouhém závodě a sprintu. Největším úspěchem v
+                        roce 2018 bylo 2. místo z Mistrovství světa, dále 2x titul Mistra
+                        ČR v individuálních závodech a celkové vítězství v Českém poháru.
+                        <br />
+                        V letošní sezóně se mi podařilo dosáhnout na 2. místo na
+                        Mistrovství Evropy a na 3. místo na Mistrovství světa.
                     </p>
                 </div>
             </div>
@@ -97,8 +101,7 @@
                                 <i class="fas fa-mobile-alt"></i>
                             </span>
                             <div class="button-project">
-                                <a href="/projects/simple-responsive-template/" class="button" target="_blank">Zobrazit
-                                    projekt</a>
+                                <a href="/projects/simple-responsive-template/" class="button" target="_blank">Zobrazit projekt</a>
                             </div>
                         </div>
                     </div>
@@ -134,8 +137,7 @@
                                 <i class="fas fa-mobile-alt"></i>
                             </span>
                             <div class="button-project">
-                                <a href="/projects/tilde-responzive/" class="button" target="_blank">Zobrazit
-                                    projekt</a>
+                                <a href="/projects/tilde-responzive/" class="button" target="_blank">Zobrazit projekt</a>
                             </div>
                         </div>
                     </div>
@@ -152,8 +154,7 @@
                                 <i class="fab fa-css3-alt"></i>
                             </span>
                             <div class="button-project">
-                                <a href="/projects/muzli/" class="button" target="_blank">Zobrazit
-                                    projekt</a>
+                                <a href="/projects/muzli/" class="button" target="_blank">Zobrazit projekt</a>
                             </div>
                         </div>
                     </div>
@@ -170,12 +171,12 @@
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
                         <a data-fancybox="gallery" href="img/img-1.jpg">
-                            <img src="img/img-1.jpg" alt="">
+                            <img src="img/img-1.jpg" alt="" />
                         </a>
                     </div>
                     <div class="col-sm-6 col-xs-12">
                         <a data-fancybox="gallery" href="img/img-2.jpg">
-                            <img src="img/img-2.jpg" alt="">
+                            <img src="img/img-2.jpg" alt="" />
                         </a>
                     </div>
                 </div>
@@ -184,22 +185,22 @@
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
                             <a data-fancybox="gallery" href="img/img-3.jpg">
-                                <img src="img/img-3.jpg" alt="">
+                                <img src="img/img-3.jpg" alt="" />
                             </a>
                         </div>
                         <div class="col-sm-6 col-xs-12">
                             <a data-fancybox="gallery" href="img/img-4.jpg">
-                                <img src="img/img-4.jpg" alt="">
+                                <img src="img/img-4.jpg" alt="" />
                             </a>
                         </div>
                         <div class="col-sm-6 col-xs-12">
                             <a data-fancybox="gallery" href="img/img-5.jpg">
-                                <img src="img/img-5.jpg" alt="">
+                                <img src="img/img-5.jpg" alt="" />
                             </a>
                         </div>
                         <div class="col-sm-6 col-xs-12">
                             <a data-fancybox="gallery" href="img/img-6.jpg">
-                                <img src="img/img-6.jpg" alt="">
+                                <img src="img/img-6.jpg" alt="" />
                             </a>
                         </div>
                     </div>
@@ -232,19 +233,16 @@
                     </div>
                     <div class="address">
                         <p>
-                            Teichmannova 16/48<br /> 77900 Olomouc<br />
+                            Teichmannova 16/48<br />
+                            77900 Olomouc<br />
                             <a href="mailto:filip.hric@seznam.cz">filip.hric@seznam.cz</a><br />
                             <a href="tel:+420775253454">+420 775 253 454</a>
-
                         </p>
                         <div class="socials-contact">
                             <p>
-                                <a href="https://www.facebook.com/FilipHric1" target="_blank"><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a href="https://www.instagram.com/fifahric/" target="_blank"><i
-                                        class="fab fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/in/filip-hric-01a68813b/" target="_blank"><i
-                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/FilipHric1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/fifahric/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/filip-hric-01a68813b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </p>
                         </div>
                     </div>
@@ -255,7 +253,7 @@
     <div class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; Filip Hric 2020 | Všechna práva vyhrazena</p>
+                <p>&copy; Filip Hric <?php echo date("Y") ?> | Všechna práva vyhrazena</p>
             </div>
         </div>
     </div>
