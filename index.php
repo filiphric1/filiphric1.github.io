@@ -205,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="more-gallery wow bounce" data-wow-delay="300ms" data-wow-duration="2s" data-wow-iteration="10">
+                <div class="more-gallery wow bounce" data-wow-delay="300ms" data-wow-duration="2s" data-wow-iteration="5">
                     <button class="collapsed" data-toggle="collapse" href="#moreGallery" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span class="if-collapsed">
                             <i class="fas fa-chevron-down"></i>
