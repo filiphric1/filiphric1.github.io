@@ -1,57 +1,39 @@
 @font-face {
   font-family: "Roboto";
-  src: url(/styles/fonts/Roboto-Light.ttf);
+  src: url(/dist/fonts/Roboto-Light.ttf);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(/styles/fonts/Roboto-Regular.ttf);
+  src: url(/dist/fonts/Roboto-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(/styles/fonts/Roboto-Medium.ttf);
+  src: url(/dist/fonts/Roboto-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(/styles/fonts/Roboto-Bold.ttf);
+  src: url(/dist/fonts/Roboto-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-a,
-a:hover,
-a:active,
-a:focus,
-button:active,
-button:focus {
-  text-decoration: none;
-  outline: none;
-}
-
-html {
+*, html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #9CDBF1;
+  color: #1A2327;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
@@ -59,7 +41,7 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #9CDBF1;
+  color: #1A2327;
   font-weight: 400;
   line-height: 1.3;
   margin-top: 0.5em;

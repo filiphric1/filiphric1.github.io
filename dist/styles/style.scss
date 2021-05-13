@@ -1,5 +1,5 @@
 $main-color: #192227;
-$font-color: #9CDBF1;
+$font-color: #1A2327;
 $icon-color: #192227;
 
 @mixin transition($duration: .3s, $effect: ease-in-out) {
@@ -9,50 +9,32 @@ $icon-color: #192227;
 
 @font-face {
     font-family: "Roboto";
-    src: url(/styles/fonts/Roboto-Light.ttf);
+    src: url(/dist/fonts/Roboto-Light.ttf);
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(/styles/fonts/Roboto-Regular.ttf);
+    src: url(/dist/fonts/Roboto-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(/styles/fonts/Roboto-Medium.ttf);
+    src: url(/dist/fonts/Roboto-Medium.ttf);
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: "Roboto";
-    src: url(/styles/fonts/Roboto-Bold.ttf);
+    src: url(/dist/fonts/Roboto-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-a,
-a:hover,
-a:active,
-a:focus,
-button:active,
-button:focus {
-    text-decoration: none;
-    outline: none;
-}
-
-html {
+*, html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
