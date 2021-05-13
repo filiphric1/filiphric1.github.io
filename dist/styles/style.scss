@@ -1,7 +1,6 @@
 $main-color: #192227;
 $font-color: #9CDBF1;
 $icon-color: #192227;
-$background-color: #263238;
 
 @mixin transition($duration: .3s, $effect: ease-in-out) {
 	-webkit-transition: all $duration $effect 0s;
@@ -57,7 +56,6 @@ html {
 }
 
 body {
-    background: $background-color;
     font-family: "Roboto", sans-serif;
 	color: $font-color;
     font-size: 18px;
