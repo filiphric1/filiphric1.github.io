@@ -117,7 +117,7 @@ h6, .h6 {
 
 @media only screen and (max-width: 767px) {
   .custom-navbar {
-    padding: 1em 0;
+    padding: 1em;
   }
   .custom-navbar .custom-navbar-logo img {
     max-height: 40px;
@@ -133,8 +133,8 @@ h6, .h6 {
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    -webkit-box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
-            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
