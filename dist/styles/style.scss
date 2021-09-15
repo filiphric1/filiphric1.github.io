@@ -388,9 +388,9 @@ h6,.h6 {
         @include transition;
         .project-tile-image {
             position: relative;
-            img {
+            .project-cover {
                 width: 100%;
-                max-height: 300px;
+                height: 300px;
                 -o-object-fit: cover;
                    object-fit: cover;
             }
@@ -422,18 +422,22 @@ h6,.h6 {
                 }
             }
         }
-        &:hover {
-            box-shadow: 0 5px 15px transparentize(#000, .3);
-            -webkit-transform: translateY(-5px);
-                    transform: translateY(-5px);
-            .project-tile-image {
-                .project-tile-info {
-                    opacity: .8;
-                    img {
-                        opacity: 1;
-                    }
-                    .project-title {
-                        opacity: 1;
+    }
+    @media only screen and (min-width: 991px) {
+        .project-tile {
+            &:hover {
+                box-shadow: 0 5px 15px transparentize(#000, .3);
+                -webkit-transform: translateY(-5px);
+                        transform: translateY(-5px);
+                .project-tile-image {
+                    .project-tile-info {
+                        opacity: .8;
+                        img {
+                            opacity: 1;
+                        }
+                        .project-title {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -442,6 +446,31 @@ h6,.h6 {
     @media only screen and (max-width: 1199px) {
         .project-tile {
             width: calc(50% - 40px);
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        .project-tile {
+            .project-tile-image {
+                .project-tile-info {
+                    top: unset;
+                    left: unset;
+                    bottom: 20px;
+                    right: 20px;
+                    width: auto;
+                    height: 40px;
+                    border: 2px solid #000;
+                    padding: .5em 1em;
+                    opacity: 1;
+                    img {
+                        width: 20px;
+                        opacity: 1;
+                    }
+                    .project-title {
+                        font-size: 16px;
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
     @media only screen and (max-width: 767px) {
