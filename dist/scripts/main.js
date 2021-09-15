@@ -11,6 +11,17 @@ $(function () {
         navMenu.classList.toggle("active");
     }
 
+	// Smrsknutí menu po odscrollování
+	$(document).on("scroll", function() {
+
+		if ($(document).scrollTop() > 50) {
+			$(".custom-navbar").addClass("navbar-scroll");
+		} else {
+			$(".custom-navbar").removeClass("navbar-scroll");
+		}
+
+	});
+
     // Animovaný nadpis na homepage
 	if ($('#heading').length) {
 
