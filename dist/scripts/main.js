@@ -7,7 +7,7 @@ $(function () {
 
     // Hamburger animace a sbalení/rozbalení menu
     const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".custom-navbar-menu");
+    const navMenu = document.querySelector(".custom-navbar-content");
 
     hamburger.addEventListener("click", mobileMenu);
 
