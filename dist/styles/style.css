@@ -18,6 +18,7 @@
 }
 
 body {
+  position: relative;
   font-family: "BarlowSemiCondensed", sans-serif;
   color: #000;
   font-size: 18px;
@@ -84,6 +85,19 @@ h6, .h6 {
   background: #000;
 }
 
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 2px solid #000;
+}
+
 .custom-navbar {
   position: fixed;
   top: 0;
@@ -119,7 +133,6 @@ h6, .h6 {
 }
 
 .custom-navbar .custom-navbar-menu .menu-item a {
-  border-bottom: 2px solid transparent;
   font-size: 20px;
   font-weight: 700;
   color: #000;

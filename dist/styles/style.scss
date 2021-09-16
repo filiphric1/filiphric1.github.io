@@ -24,6 +24,7 @@ $icon-color: #000;
 }
 
 body {
+    position: relative;
     font-family: "BarlowSemiCondensed", sans-serif;
 	color: $font-color;
     font-size: 18px;
@@ -80,6 +81,17 @@ h6,.h6 {
     }
 }
 
+.nav-tabs {
+    border-bottom: none;
+    .nav-link {
+        border: none;
+        border-bottom: 2px solid transparent;
+        &.active {
+            border-bottom: 2px solid #000;
+        }
+    }
+}
+
 .custom-navbar {
     position: fixed;
     top: 0;
@@ -104,7 +116,6 @@ h6,.h6 {
         margin: 0;
         .menu-item {
             a {
-                border-bottom: 2px solid transparent;
                 font-size: 20px;
                 font-weight: 700;
                 color: $font-color;

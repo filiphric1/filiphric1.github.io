@@ -19,16 +19,16 @@
 		<meta name="theme-color" content="#ffffff" />
 	</head>
 
-	<body id="top">
+	<body data-bs-spy="scroll" data-bs-target="#navbar-menu">
 		<div class="container">
 			<nav class="custom-navbar">
 				<div class="custom-navbar-logo">
 					<a href="#top"><img src="/dist/img/logo.svg" alt="FH"></a>
 				</div>
-				<ul class="custom-navbar-menu">
-					<li class="menu-item"><a href="#about">O mně</a></li>
-					<li class="menu-item"><a href="#">Projekty</a></li>
-					<li class="menu-item"><a href="#">Kontakt</a></li>
+				<ul id="navbar-menu" class="nav nav-tabs custom-navbar-menu" role="tablist">
+					<li class="menu-item nav-item"><a class="nav-link" href="#about">O mně</a></li>
+					<li class="menu-item nav-item"><a class="nav-link" href="#projects">Projekty</a></li>
+					<li class="menu-item nav-item"><a class="nav-link" href="#contacts">Kontakt</a></li>
 				</ul>
 				<div class="hamburger">
 					<span class="bar"></span>
@@ -38,7 +38,7 @@
 			</nav>
 		</div>
 
-		<div class="custom-intro-wrap">
+		<div class="custom-intro-wrap" id="top">
 			<div class="container">
 				<div class="custom-intro-content">
 					<div class="custom-intro-image-section">
@@ -104,7 +104,7 @@
 			</div>
 		</div>
 
-		<div class="custom-projects-wrap">
+		<div class="custom-projects-wrap" id="projects">
 			<div class="container">
 				<h2 class="h3"><strong>Vybrané projekty</strong></h2>
 				<div class="custom-projects-grid">
@@ -163,6 +163,18 @@
 						</a>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="custom-contacts-wrap" id="contacts">
+			<div class="container">
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
+				<h2>Kontakty</h2>
 			</div>
 		</div>
 

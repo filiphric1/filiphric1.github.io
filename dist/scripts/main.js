@@ -1,5 +1,10 @@
 $(function () {
 
+	let scrollSpy = new bootstrap.ScrollSpy(document.body, {
+		target: '#navbar-menu',
+		offset: 96,
+	})
+
     // Hamburger animace a sbalení/rozbalení menu
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".custom-navbar-menu");
