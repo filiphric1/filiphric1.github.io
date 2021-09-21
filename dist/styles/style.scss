@@ -182,6 +182,7 @@ h6,.h6 {
             flex-direction: column;
             width: 100%;
             background-color: #fff;
+            border-top: 1px solid #eee;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             @include transition;
@@ -536,14 +537,19 @@ h6,.h6 {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
+    line-height: 1;
     text-align: center;
     text-transform: uppercase;
+    .small-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 }
 
 .footer-contacts {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     .footer-contact {
         padding: .3em 1em;
         img {

@@ -212,6 +212,7 @@ h6, .h6 {
             flex-direction: column;
     width: 100%;
     background-color: #fff;
+    border-top: 1px solid #eee;
     -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -644,8 +645,14 @@ h6, .h6 {
   color: #fff;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
+}
+
+.custom-contacts-text .small-text {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .footer-contacts {
@@ -655,9 +662,9 @@ h6, .h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer-contacts .footer-contact {
