@@ -6,23 +6,23 @@ $(function () {
 	})
 
     // Hamburger animace a sbalení/rozbalení menu
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".custom-navbar-content");
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.custom-navbar-content');
 
-    hamburger.addEventListener("click", mobileMenu);
+    hamburger.addEventListener('click', mobileMenu);
 
     function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
     }
 
 	// Smrsknutí menu po odscrollování
-	$(document).on("scroll", function() {
+	$(document).on('scroll', function() {
 
 		if ($(document).scrollTop() > 50) {
-			$(".custom-navbar").addClass("navbar-scroll");
+			$('.custom-navbar').addClass('navbar-scroll');
 		} else {
-			$(".custom-navbar").removeClass("navbar-scroll");
+			$('.custom-navbar').removeClass('navbar-scroll');
 		}
 
 	});
@@ -30,9 +30,9 @@ $(function () {
     // Animovaný nadpis na homepage
 	if ($('#heading').length) {
 
-		let typeText = document.querySelector("#heading");
+		let typeText = document.querySelector('#heading');
 		let textToBeTyped = typeText.innerText;
-		let index = 0, isAdding = true;
+		let index = 0;
 
 		function playAnim() {
 			setTimeout(function () {
@@ -44,39 +44,13 @@ $(function () {
 					// přidá 1 písmeno
 					index++
 				}
+				typeText.style.color = '#fff';
+				typeText.style.setProperty('--pseudo-color', '#fff');
 				playAnim()
-			}, 200)
+			}, 100)
 		}
 		playAnim()
 
-	}
-
-    // Spuštění timeline animace
-	if ($("#timeline-section").length > 0) {
-
-		function animateTimeline() {
-			$('.timeline-item').each(function(i) {
-				let item = $(this);
-				setTimeout(function() {
-					item.fadeIn();
-				}, 800*i);
-			});
-		}
-
-		$('.timeline-item').each(function() {
-			$(this).hide();
-		});
-
-        $(window).scroll(function() {
-            var top_of_element = $("#timeline-section").offset().top;
-            var bottom_of_element = $("#timeline-section").offset().top + $("#timeline-section").outerHeight();
-            var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight() - 200;
-            var top_of_screen = $(window).scrollTop();
-
-            if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
-                animateTimeline();
-            }
-        });
 	}
 
 });
