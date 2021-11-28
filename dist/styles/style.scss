@@ -263,14 +263,13 @@ h6,.h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     .custom-intro-image-section {
         .main-image {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 350px;
-            height: 350px;
+            width: 300px;
+            height: 300px;
             border-radius: 100rem;
             background: linear-gradient(270.72deg, rgb(13, 228, 137) -2.9%, rgb(7, 168, 179) 102.01%);
             background-origin: border-box;
@@ -290,6 +289,7 @@ h6,.h6 {
         h1 {
             line-height: .8;
             text-align: center;
+            margin: .2em 0;
             .subheading {
                 color: $main-color;
                 font-weight: 200;
@@ -353,36 +353,6 @@ h6,.h6 {
     }
     50% {
         opacity: 0;
-    }
-}
-
-.custom-contacts-wrap {
-    background: #000;
-    padding: 3em 0;
-    margin-top: 4em;
-}
-
-.custom-contacts-text {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    .small-text {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-}
-
-.footer-contacts {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    .footer-contact {
-        padding: .3em 1em;
-        img {
-            width: 30px;
-        }
     }
 }
 
@@ -645,6 +615,76 @@ h6,.h6 {
             }
             .name {
                 font-size: 1.6em;
+            }
+        }
+    }
+}
+
+.custom-projects-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 4em;
+    .project-section {
+        background: $icon-color;
+        border-radius: 1.5em;
+        padding: 1em 2em;
+        .heading {
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            @include gradient;
+        }
+        .text {
+            border-top: 1px solid transparentize($font-color, .7);
+            font-weight: 200;
+            padding-top: 1em;
+            margin: .3em 0 0;
+            .important {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.custom-contacts-wrap {
+    background: #000;
+    padding: 3em 0;
+    margin-top: 4em;
+}
+
+.custom-contacts-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    .small-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    @media only screen and (max-width: 575px) {
+        font-size: 1.5rem;
+        .small-text {
+            font-size: 1rem;
+        }
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .footer-contact {
+        padding: .3em 1em;
+        img {
+            width: 30px;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .footer-contact {
+            img {
+                width: 25px;
             }
         }
     }
