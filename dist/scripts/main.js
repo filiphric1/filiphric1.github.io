@@ -1,30 +1,40 @@
 $(function () {
 
-	let scrollSpy = new bootstrap.ScrollSpy(document.body, {
-		target: '#navbar-menu',
-		offset: 96,
-	})
+	$('body').scrollspy({ target: '#navbar-menu', offset: 85 });
 
     // Hamburger animace a sbalení/rozbalení menu
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.custom-navbar-content');
 
+	// Sbalení/rozbalení po kliknutí hamburger
     hamburger.addEventListener('click', mobileMenu);
 
+	// Sbalení menu po kliknutí na položku v menu
+	document.querySelectorAll('.nav-link').forEach(item => {
+		item.addEventListener('click', event => {
+			mobileMenu();
+		})
+	});
+
+	// Funkce sbalení/rozbalení
     function mobileMenu() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     }
 
-	// Smrsknutí menu po odscrollování
-	$(document).on('scroll', function() {
 
+	// Smrsknutí menu po odscrollování
+	function isScroll() {
 		if ($(document).scrollTop() > 50) {
 			$('.custom-navbar').addClass('navbar-scroll');
 		} else {
 			$('.custom-navbar').removeClass('navbar-scroll');
 		}
+	}
+	isScroll();
 
+	$(document).on('scroll', function() {
+		isScroll();
 	});
 
     // Animovaný nadpis na homepage

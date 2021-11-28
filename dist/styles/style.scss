@@ -8,6 +8,12 @@ $icon-color: #000;
     -webkit-text-fill-color: transparent;
 }
 
+@mixin customGradient($color) {
+    background: linear-gradient(270.72deg, $color -2.9%, #929292 102.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin transition($duration: .3s, $effect: ease-in-out) {
 	transition: all $duration $effect 0s;
 }
@@ -98,6 +104,7 @@ h6,.h6 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    min-height: 85px;
     background: $main-color;
     padding: 1em 3em;
     z-index: 999;
@@ -155,6 +162,25 @@ h6,.h6 {
             background-color: $font-color;
             margin: 5px auto;
             @include transition;
+        }
+    }
+    @media only screen and (max-width: 1199px) {
+        .custom-navbar-content {
+            .custom-navbar-menu {
+                .menu-item {
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+            .navbar-contacts {
+                margin-left: 0;
+                .navbar-contact {
+                    img {
+                        width: 22px;
+                    }
+                }
+            }
         }
     }
     @media only screen and (max-width: 991px) {
@@ -467,4 +493,159 @@ h6,.h6 {
 .zoomIn {
     -webkit-animation-name: zoomIn;
             animation-name: zoomIn;
+}
+
+.navbar-placeholer {
+    min-height: 85px;
+}
+
+.section-main-heading {
+    font-weight: 400;
+}
+
+.custom-journey-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 4em;
+    .journey-section {
+        background: $icon-color;
+        border-radius: 1.5em;
+        padding: 1em 2em;
+        .heading {
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            @include gradient;
+        }
+        .text {
+            border-top: 1px solid transparentize($font-color, .7);
+            font-weight: 200;
+            padding-top: 1em;
+            margin: .3em 0 0;
+            .important {
+                font-weight: 500;
+            }
+        }
+    }
+    @media only screen and (max-width: 1199px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media only screen and (max-width: 575px) {
+        .section {
+            padding: 1em 1.5em;
+            .heading {
+                font-size: 1.4em;
+            }
+            .text {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.custom-technology-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+    .technology-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $icon-color;
+        border-radius: 1em;
+        padding: 1em;
+        .name {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+    .section-big {
+        border-radius: 1.5em;
+        padding: 2em;
+        img {
+            max-height: 80px;
+        }
+        .name {
+            font-size: 2em;
+            line-height: 1;
+            margin: .5em 0 0;
+        }
+    }
+    .html-section {
+        grid-column: 1 / 3;
+        .name{
+            @include customGradient(#FF7C14);
+        }
+    }
+    .scss-section {
+        grid-column: 3 / 5;
+        .name{
+            @include customGradient(#CE6699);
+        }
+    }
+    .javascript-section {
+        grid-column: 5 / 7;
+        .name{
+            @include customGradient(#F4E31E);
+        }
+    }
+    .twig-section {
+        .name{
+            @include customGradient(#92BC23);
+        }
+    }
+    .bootstrap-section {
+        .name{
+            @include customGradient(#8D00F5);
+        }
+    }
+    .jquery-section {
+        .name{
+            @include customGradient(#2266AE);
+        }
+    }
+    .php-section {
+        .name{
+            @include customGradient(#7473AA);
+        }
+    }
+    .mariadb-section {
+        .name{
+            @include customGradient(#B57255);
+        }
+    }
+    .git-section {
+        .name{
+            @include customGradient(#DC4D2E);
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+        .html-section {
+            grid-column: 1 / 3;
+        }
+        .scss-section {
+            grid-column: 1 / 3;
+        }
+        .javascript-section {
+            grid-column: 1 / 3;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .technology-section {
+            .name {
+                font-size: 1.2em;
+            }
+        }
+        .section-big {
+            img {
+                max-height: 40px;
+            }
+            .name {
+                font-size: 1.6em;
+            }
+        }
+    }
 }
