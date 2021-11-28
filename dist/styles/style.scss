@@ -121,7 +121,7 @@ h6,.h6 {
             .menu-item {
                 a {
                     font-size: 1.2em;
-                    font-weight: 400;
+                    font-weight: 500;
                     color: $font-color;
                     text-decoration: none;
                     padding: .3em 0;
@@ -136,10 +136,10 @@ h6,.h6 {
         }
         .navbar-contacts {
             display: flex;
-            align-items: center;
-            margin-left: 10px;
+            align-items: flex-end;
+            margin-left: 3em;
             .navbar-contact {
-                padding: .3em 1em;
+                padding: .3em .8em;
                 img {
                     width: 25px;
                 }
@@ -228,6 +228,8 @@ h6,.h6 {
 }
 
 .custom-intro-wrap {
+    position: relative;
+    min-height: calc(100vh - 80px);
     background: $main-color;
     padding-top: 2em;
 }
@@ -247,6 +249,7 @@ h6,.h6 {
             background: linear-gradient(270.72deg, rgb(13, 228, 137) -2.9%, rgb(7, 168, 179) 102.01%);
             background-origin: border-box;
             background-clip: content-box, border-box;
+            box-shadow: 0 0 20px #000;
             img {
                 width: calc(100% - 12px);
                 height: calc(100% - 12px);
@@ -305,6 +308,7 @@ h6,.h6 {
     &::after {
         content: "|";
         color: var(--pseudo-color);
+        font-weight: 200;
         -webkit-animation: blink 1s infinite;
                 animation: blink 1s infinite;
     }
@@ -354,4 +358,113 @@ h6,.h6 {
             width: 30px;
         }
     }
+}
+
+.circle-button {
+    border: solid 3px transparent;
+    border-radius: 100rem;
+    background-image: linear-gradient(270.72deg, rgb(13, 228, 137) -2.9%, rgb(7, 168, 179) 102.01%);
+    background-clip: content-box, border-box;
+	cursor: pointer;
+    transition: box-shadow .5s ease;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: 15px;
+		width: 15px;
+		height: 15px;
+		border-top: 2px solid $main-color;
+		border-right: 2px solid $main-color;
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+    @media only screen and (min-width: 767px) {
+        &:hover,
+        &:focus-visible {
+            box-shadow: none;
+        }
+    }
+}
+
+.arrow-page-slide-up {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+    @media only screen and (max-width: 767px) {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.scroll-button-wrap {
+    position: absolute;
+	bottom: 50px;
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+    @media only screen and (max-width: 575px) {
+        bottom: 60px;
+    }
+    @media only screen and (max-width: 340px) {
+        display: none;
+    }
+}
+.button-shadow {
+    position: absolute;
+    top: calc(50% - 50px);
+    bottom: calc(50% - 50px);
+    width: 100%;
+    height: 100%;
+    background: $icon-color;
+    border-radius: 50%;
+}
+.scroll-down-button {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    &:before {
+		top: 17px;
+        left: 20px;
+		-webkit-transform: rotate(135deg);
+		        transform: rotate(135deg);
+	}
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+              transform: scale3d(.4, .4, .4);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.4, .4, .4);
+              transform: scale3d(.4, .4, .4);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn;
 }

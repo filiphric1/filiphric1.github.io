@@ -53,4 +53,16 @@ $(function () {
 
 	}
 
+	// šipka pro vyjetí na začátek stránky
+	$(document).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('.arrow-page-slide-up').fadeIn();
+		} else {
+			$('.arrow-page-slide-up').fadeOut();
+		}
+	});
+	$('.arrow-page-slide-up').on('click', function() {
+		$('html, body').animate({scrollTop: 0});
+	});
+
 });

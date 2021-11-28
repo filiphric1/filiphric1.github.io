@@ -8,10 +8,11 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" href="dist/styles/libs/normalize.css" />
 		<link rel="stylesheet" href="dist/styles/libs/bootstrap.min.css" />
+		<link rel="stylesheet" href="dist/styles/libs/animate.css" />
 		<link rel="stylesheet" href="dist/styles/style.css" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicons/apple-touch-icon.png" />
@@ -27,12 +28,12 @@
 		<header class="container">
 			<nav class="custom-navbar">
 				<div class="custom-navbar-logo">
-					<a href="/">filip hric</a>
+					<a href="#top">filip hric</a>
 				</div>
 				<div class="custom-navbar-content">
 					<ul id="navbar-menu" class="nav nav-tabs custom-navbar-menu" role="tablist">
-						<li class="menu-item nav-item"><a class="nav-link" href="#about">o mně</a></li>
-						<li class="menu-item nav-item"><a class="nav-link" href="#projects">projekty</a></li>
+						<li class="menu-item nav-item"><a class="nav-link" href="#about">01/ o mně</a></li>
+						<li class="menu-item nav-item"><a class="nav-link" href="#projects">02/ projekty</a></li>
 					</ul>
 					<div class="navbar-contacts">
 						<a href="mailto:filip.hric@seznam.cz" class="navbar-contact">
@@ -67,6 +68,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="scroll-button-wrap">
+				<div class="button-shadow animated hinge infinite zoomIn"></div>
+				<a href="#about" class="scroll-down-button smoothscroll circle-button" aria-label="Přejít na další obsah"></a>
+			</div>
 		</section>
 
 		<section id="about"></section>
@@ -91,6 +96,8 @@
 				</div>
 			</div>
 		</section>
+
+		<div class="arrow-page-slide-up circle-button" style="display: none;"></div>
 
 		<script src="dist/scripts/libs/jquery-3.6.0.min.js"></script>
 		<script src="dist/scripts/libs/bootstrap.bundle.min.js"></script>
