@@ -469,7 +469,7 @@ h6,.h6 {
     .journey-section {
         background: $icon-color;
         border-radius: 1.5em;
-        padding: 1em 2em;
+        padding: 1.5em 2em 2em;
         .heading {
             display: inline-block;
             font-weight: 700;
@@ -608,28 +608,145 @@ h6,.h6 {
     }
 }
 
-.custom-projects-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+.custom-projects-wrap {
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        bottom: 4.5rem;
+        width: 5px;
+        border-radius: 5px;
+        background: linear-gradient(130deg,rgb(13, 228, 137),rgb(7, 168, 179) 76.05%);
+        box-shadow: -10px 0 20px 3px #000;
+    }
+    @media only screen and (max-width: 991px) {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.project-cards-wrap {
+    display: flex;
+    overflow-x: scroll;
+    padding: 4rem 0 4rem 4rem;
     margin-bottom: 4em;
-    .project-section {
-        background: $icon-color;
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #016366;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    }
+    &::-webkit-scrollbar-track {
+        background: darken($main-color, 3%);
+    }
+    .project-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        min-width: 300px;
+        min-height: 300px;
+        background: #1f1f20;
         border-radius: 1.5em;
-        padding: 1em 2em;
+        box-shadow: -1rem 0 3rem #000;
+        color: #bbb;
+        text-decoration: none;
+        padding: 2em;
+        @include transition;
         .heading {
             display: inline-block;
+            font-size: 1.2em;
             font-weight: 700;
             margin: 0;
-            @include gradient;
         }
-        .text {
-            border-top: 1px solid transparentize($font-color, .7);
-            font-weight: 200;
-            padding-top: 1em;
-            margin: .3em 0 0;
-            .important {
-                font-weight: 500;
+        .project-tags {
+            margin: 1em -0.2em;
+            .tag {
+                display: inline-block;
+                border: 1px solid rgb(75, 75, 75);
+                border-radius: 3em;
+                font-size: 0.8em;
+                font-weight: 300;
+                padding: .3em .6em;
+                margin: .3em .2em;
+                @include transition;
+                &:hover {
+                    border: 1px solid $font-color;
+                    color: $font-color
+                }
+            }
+        }
+        .website-link {
+            display: flex;
+            align-items: flex-end;
+            flex-grow: 1;
+            color: #bbb;
+        }
+        &:hover {
+            -webkit-transform: translateY(-1rem);
+                    transform: translateY(-1rem);
+            .heading {
+                @include gradient;
+            }
+            .website-link {
+                color: $font-color;
+            }
+        }
+        &:hover~.project-card {
+            -webkit-transform: translateX(130px);
+                    transform: translateX(130px);
+        }
+        &:not(:first-child) {
+            margin-left: -130px;
+        }
+    }
+    @media only screen and (max-width: 991px) {
+        flex-wrap: wrap;
+        overflow-x: unset;
+        padding: 0;
+        margin: 0 -10px;
+        .project-card {
+            width: calc(50% - 20px);
+            min-width: unset;
+            background: $icon-color;
+            box-shadow: unset;
+            margin: 10px;
+            .heading {
+                @include gradient;
+            }
+            .website-link {
+                color: $font-color;
+            }
+            &:hover {
+                -webkit-transform: unset;
+                        transform: unset;
+                .website-link {
+                    color: $font-color;
+                }
+            }
+            &:hover~.project-card {
+                -webkit-transform: unset;
+                        transform: unset;
+            }
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        margin: 0;
+        .project-card {
+            width: 100%;
+            min-height: 250px;
+            margin: 10px 0;
+            &:not(:first-child) {
+                margin-left: 0;
             }
         }
     }
