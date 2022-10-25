@@ -10,6 +10,13 @@ $icon-color: #ff1616;
     box-sizing: border-box;
 }
 
+html {
+    @media only screen and (max-width: 767px) {
+        position: fixed;
+        height: 100%;
+    }
+}
+
 body {
     background: $main-color;
     position: relative;
@@ -55,10 +62,6 @@ h5,.h5 {
 }
 h6,.h6 {
     font-size: clamp(1.6rem, 2.2vw, 2.2rem);
-}
-
-.gradient {
-    @include gradient;
 }
 
 .custom-button {
@@ -327,7 +330,7 @@ h6,.h6 {
     }
     @media only screen and (max-width: 767px) {
         min-height: unset;
-        height: calc(100vh - 70px);
+        height: calc(100% - 70px);
     }
     @media only screen and (max-width: 575px) {
         padding-top: 2em;

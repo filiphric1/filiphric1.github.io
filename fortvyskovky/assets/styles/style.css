@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 767px) {
+  html {
+    position: fixed;
+    height: 100%;
+  }
+}
+
 body {
   background: #fff;
   position: relative;
@@ -55,12 +62,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: clamp(1.6rem, 2.2vw, 2.2rem);
-}
-
-.gradient {
-  background: linear-gradient(270.72deg, rgb(13, 228, 137) -2.9%, rgb(7, 168, 179) 102.01%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .custom-button {
@@ -300,7 +301,8 @@ h6, .h6 {
 }
 @media only screen and (max-width: 767px) {
   .custom-intro-wrap {
-    min-height: calc(100vh - 70px);
+    min-height: unset;
+    height: calc(100% - 70px);
   }
 }
 @media only screen and (max-width: 575px) {
