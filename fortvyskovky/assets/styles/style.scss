@@ -327,7 +327,7 @@ h6,.h6 {
         margin-top: 1.5em;
     }
     @media only screen and (max-width: 767px) {
-        min-height: unset;
+        min-height: 450px;
         height: calc(100vh - 70px);
     }
     @media only screen and (max-width: 575px) {
