@@ -2,11 +2,9 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 767px) {
-  html {
-    position: fixed;
-    height: 100%;
-  }
+html,
+body {
+  height: 100vh;
 }
 
 body {
@@ -302,7 +300,7 @@ h6, .h6 {
 @media only screen and (max-width: 767px) {
   .custom-intro-wrap {
     min-height: unset;
-    height: calc(100% - 70px);
+    height: calc(100vh - 70px);
   }
 }
 @media only screen and (max-width: 575px) {
