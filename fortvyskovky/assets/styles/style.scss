@@ -2,12 +2,6 @@ $main-color: #fff;
 $font-color: #000;
 $icon-color: #ff1616;
 
-@mixin gradient() {
-    background: linear-gradient(270.72deg, rgb(13, 228, 137) -2.9%, rgb(7, 168, 179) 102.01%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 @mixin transition($duration: .3s, $effect: ease-in-out) {
 	transition: all $duration $effect 0s;
 }
@@ -332,7 +326,8 @@ h6,.h6 {
         margin-top: 1.5em;
     }
     @media only screen and (max-width: 767px) {
-        min-height: calc(100vh - 70px);
+        min-height: unset;
+        height: calc(100vh - 70px);
     }
     @media only screen and (max-width: 575px) {
         padding-top: 2em;
