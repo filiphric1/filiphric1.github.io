@@ -501,7 +501,7 @@ h6, .h6 {
 
 .custom-contacts-wrap {
   text-align: center;
-  padding: 2em 0 1em;
+  padding: 2em 0 0.5em;
 }
 .custom-contacts-wrap .contact-person {
   display: grid;
