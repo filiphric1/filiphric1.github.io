@@ -39,14 +39,6 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 		setIntroHeight();
 	});
 
-	// Custom intro height calc
-	const introWrap = document.getElementById("intro-wrap");
-	function setIntroHeight() {
-		let introHeight = window.innerHeight - 70;
-		introWrap.style.height = `${introHeight}px`;
-	}
-	setIntroHeight();
-
 	// Image gallery width & height settings
 	let images = document.querySelectorAll("#my-gallery img");
 	[...images].forEach((img) => {

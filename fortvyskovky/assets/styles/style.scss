@@ -462,6 +462,7 @@ h6,.h6 {
                 justify-content: center;
                 align-items: center;
                 width: 30px;
+                min-width: 30px;
                 height: 30px;
                 background: $icon-color;
                 border-radius: 50%;
@@ -475,6 +476,9 @@ h6,.h6 {
         }
     }
     @media only screen and (max-width: 767px) {
+        .services-description {
+            font-size: 1em;
+        }
         .services-list {
             .service-item {
                 font-size: 1em;
@@ -519,11 +523,16 @@ h6,.h6 {
             grid-auto-rows: 150px;
         }
     }
+    @media only screen and (max-width: 767px) {
+        .custom-gallery {
+            grid-auto-rows: 100px;
+        }
+    }
 }
 
 .custom-contacts-wrap {
     text-align: center;
-    padding: 2em 0 0;
+    padding: 2em 0 1em;
     .contact-person {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -579,6 +588,7 @@ h6,.h6 {
         .contact-person {
             grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: unset;
+            font-size: 1em;
         }
     }
 }

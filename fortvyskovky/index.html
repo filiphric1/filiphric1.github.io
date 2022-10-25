@@ -77,6 +77,16 @@
 			</div>
 		</section>
 
+		<script>
+			// Custom intro height calc
+			const introWrap = document.getElementById("intro-wrap");
+			function setIntroHeight() {
+				let introHeight = window.innerHeight - 70;
+				introWrap.style.height = `${introHeight}px`;
+			}
+			setIntroHeight();
+		</script>
+
 		<section class="services-wrap section-wrap" id="services">
 			<div class="container">
 				<h2 class="section-heading h3">Nabízené služby</h2>
