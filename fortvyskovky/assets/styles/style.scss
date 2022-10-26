@@ -433,6 +433,10 @@ h6,.h6 {
         font-size: 1.2em;
         letter-spacing: .05em;
         text-align: center;
+        .contact-link {
+            color: $icon-color;
+            font-weight: 700;
+        }
     }
     .services-heading {
         font-weight: 700;
@@ -572,8 +576,7 @@ h6,.h6 {
                     }
                 }
             }
-            &:hover,
-            &:focus {
+            &:hover {
                 box-shadow: 0 3px 6px transparentize(#000000, .5);
                 transform: translateY(-5px);
             }

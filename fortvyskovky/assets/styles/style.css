@@ -410,6 +410,10 @@ h6, .h6 {
   letter-spacing: 0.05em;
   text-align: center;
 }
+.services-wrap .services-description .contact-link {
+  color: #ff1616;
+  font-weight: 700;
+}
 .services-wrap .services-heading {
   font-weight: 700;
   text-align: center;
@@ -542,7 +546,7 @@ h6, .h6 {
 .custom-contacts-wrap .contact-person a .icon svg path {
   fill: #fff;
 }
-.custom-contacts-wrap .contact-person a:hover, .custom-contacts-wrap .contact-person a:focus {
+.custom-contacts-wrap .contact-person a:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   transform: translateY(-5px);
 }

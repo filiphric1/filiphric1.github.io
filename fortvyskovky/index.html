@@ -80,8 +80,10 @@
 		<script>
 			// Custom intro height calc
 			const introWrap = document.getElementById("intro-wrap");
+			const navbarWrap = document.getElementById("custom-navbar");
 			function setIntroHeight() {
-				let introHeight = window.innerHeight - 70;
+				let navbarHeight = navbarWrap.offsetHeight;
+				let introHeight = window.innerHeight - navbarHeight;
 				introWrap.style.height = `${introHeight}px`;
 			}
 			setIntroHeight();
@@ -91,7 +93,7 @@
 			<div class="container">
 				<h2 class="section-heading h3">Nabízené služby</h2>
 				<p class="services-description">
-					Námi nabízené práce <strong>realizujeme pro všechny</strong>, kdo se na nás s důvěrou obrátí.<br>Nevybíráme si zakázky dle rozsahu – jsme tady pro každého. Neváhejte se na nás kdykoliv obrátit, rádi Vám <strong>pomůžeme nebo poradíme</strong>. Působíme po <strong>celé Moravě</strong>, především však <strong>na Olomoucku</strong>.
+					Námi nabízené práce <strong>realizujeme pro všechny</strong>, kdo se na nás s důvěrou obrátí.<br>Nevybíráme si zakázky dle rozsahu – jsme tady pro každého. Neváhejte se na nás <a href="#contacts" class="contact-link" title="Přejít na kontakty">kdykoliv obrátit</a>, rádi Vám <strong>pomůžeme nebo poradíme</strong>. Působíme po <strong>celé Moravě</strong>, především však <strong>na Olomoucku</strong>.
 				</p>
 				<h3 class="h6 services-heading">Provádíme následující práce:</h3>
 				<div class="services-list">
