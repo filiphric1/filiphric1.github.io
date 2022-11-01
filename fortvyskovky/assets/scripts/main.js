@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 	[...images].forEach((img) => {
 		let a = img.parentElement;
 		img.addEventListener("load", () => {
+			console.log(img.naturalWidth);
 			a.setAttribute("data-pswp-width", img.naturalWidth);
 			a.setAttribute("data-pswp-height", img.naturalHeight);
 		});
