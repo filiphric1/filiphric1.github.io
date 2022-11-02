@@ -547,7 +547,7 @@ h6, .h6 {
   fill: #fff;
 }
 .custom-contacts-wrap .contact-person a:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
 }
 @media only screen and (max-width: 1199px) {

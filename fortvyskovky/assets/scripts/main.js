@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 		setIntroHeight();
 	});
 
-	// Image gallery width & height settings
 	let images = document.querySelectorAll("#my-gallery img");
 	[...images].forEach((img) => {
 		let a = img.parentElement;
