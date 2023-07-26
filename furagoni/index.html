@@ -17,17 +17,17 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="furagoni/styles/libs/normalize.css" />
-		<link rel="stylesheet" href="furagoni/styles/libs/cookieconsent.css" media="print" onload="this.media='all'">
-		<link rel="stylesheet" href="furagoni/styles/libs/bootstrap.min.css" />
-		<link rel="stylesheet" href="furagoni/styles/libs/animate.css" />
-		<link rel="stylesheet" href="furagoni/styles/libs/photoswipe.css" />
-		<link rel="stylesheet" href="furagoni/styles/style.css" />
+		<link rel="stylesheet" href="assets/styles/libs/normalize.css" />
+		<link rel="stylesheet" href="assets/styles/libs/cookieconsent.css" media="print" onload="this.media='all'">
+		<link rel="stylesheet" href="assets/styles/libs/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/styles/libs/animate.css" />
+		<link rel="stylesheet" href="assets/styles/libs/photoswipe.css" />
+		<link rel="stylesheet" href="assets/styles/style.css" />
 
-		<link rel="apple-touch-icon" sizes="180x180" href="furagoni/img/favicons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="furagoni/img/favicons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="furagoni/img/favicons/favicon-16x16.png">
-		<link rel="manifest" href="furagoni/img/favicons/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="assets/img/favicons/site.webmanifest">
 
 		<!-- Google tag (gtag.js) -->
 		<!-- <script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-LLVYCLQBSZ" defer></script>
@@ -45,7 +45,7 @@
 			<nav id="custom-navbar" class="custom-navbar">
 				<div class="custom-navbar-logo">
 					<a href="/" title="Furagoni">
-						<img src="furagoni/img/logo.png" alt="Furagoni - fyzioterapie" loading="lazy">
+						<img src="assets/img/logo.png" alt="Furagoni - fyzioterapie" loading="lazy">
 					</a>
 				</div>
 				<div class="custom-navbar-content">
@@ -77,7 +77,7 @@
 
 		<section class="custom-intro-wrap" id="intro-wrap">
 			<div class="intro-image">
-				<img src="furagoni/img/intro.jpg" alt="Ordinace fyzioterapie Furagoni">
+				<img src="assets/img/intro.jpg" alt="Ordinace fyzioterapie Furagoni">
 			</div>
 			<div class="intro-text">
 				<h1 class="main-heading section-heading">
@@ -111,7 +111,7 @@
 				<h2 class="section-heading h3">O mně</h2>
 				<div class="about-wrapper">
 					<div class="about-image">
-						<img src="/furagoni/img/about.jpg" alt="Adelá Fialová - fyzioterapeutka">
+						<img src="/assets/img/about.jpg" alt="Adelá Fialová - fyzioterapeutka">
 					</div>
 					<div class="about-text">
 						<p class="services-description">
@@ -161,14 +161,14 @@
 					* Můžete využít příspěvků v rámci FKSP
 				</p>
 				<div class="custom-gallery" id="my-gallery">
-					<a href="furagoni/img/gallery/img-(1).jpg" class="gallery-item">
-						<img src="furagoni/img/gallery/img-(1).jpg" alt="Furagoni" loading="lazy">
+					<a href="assets/img/gallery/img-(1).jpg" class="gallery-item">
+						<img src="assets/img/gallery/img-(1).jpg" alt="Furagoni" loading="lazy">
 					</a>
-					<a href="furagoni/img/gallery/img-(2).jpg" class="gallery-item">
-						<img src="furagoni/img/gallery/img-(2).jpg" alt="Furagoni" loading="lazy">
+					<a href="assets/img/gallery/img-(2).jpg" class="gallery-item">
+						<img src="assets/img/gallery/img-(2).jpg" alt="Furagoni" loading="lazy">
 					</a>
-					<a href="furagoni/img/gallery/img-(3).jpg" class="gallery-item">
-						<img src="furagoni/img/gallery/img-(3).jpg" alt="Furagoni" loading="lazy">
+					<a href="assets/img/gallery/img-(3).jpg" class="gallery-item">
+						<img src="assets/img/gallery/img-(3).jpg" alt="Furagoni" loading="lazy">
 					</a>
 				</div>
 			</div>
@@ -217,16 +217,16 @@
 			</div>
 		</section>
 
-		<script defer src="furagoni/scripts/libs/cookieconsent.js"></script>
-		<script defer src="furagoni/scripts/libs/cookieconsent-init.js"></script>
-		<script src="furagoni/scripts/libs/bootstrap.bundle.min.js"></script>
-		<script src="furagoni/scripts/main.js"></script>
+		<script defer src="assets/scripts/libs/cookieconsent.js"></script>
+		<script defer src="assets/scripts/libs/cookieconsent-init.js"></script>
+		<script src="assets/scripts/libs/bootstrap.bundle.min.js"></script>
+		<script src="assets/scripts/main.js"></script>
 		<script type="module">
-			import PhotoSwipeLightbox from './furagoni/scripts/libs/photoswipe-lightbox.esm.min.js';
+			import PhotoSwipeLightbox from './assets/scripts/libs/photoswipe-lightbox.esm.min.js';
 			const lightbox = new PhotoSwipeLightbox({
 			  gallery: '#my-gallery',
 			  children: 'a',
-			  pswpModule: () => import('./furagoni/scripts/libs/photoswipe.esm.min.js')
+			  pswpModule: () => import('./assets/scripts/libs/photoswipe.esm.min.js')
 			});
 			lightbox.init();
 		</script>
