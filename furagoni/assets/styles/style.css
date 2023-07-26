@@ -435,6 +435,11 @@ h6, .h6 {
   text-align: center;
   margin: 1em 0 0.5em;
 }
+@media only screen and (max-width: 991px) {
+  .services-wrap .services-description {
+    text-align: center;
+  }
+}
 
 .about-wrapper {
   display: flex;
@@ -450,6 +455,9 @@ h6, .h6 {
 .about-wrapper .about-text {
   width: 75%;
 }
+.about-wrapper .about-text .mobile-image {
+  display: none;
+}
 @media only screen and (max-width: 991px) {
   .about-wrapper {
     flex-direction: column;
@@ -458,13 +466,21 @@ h6, .h6 {
     padding: 0 1em;
   }
   .about-wrapper .about-image {
-    order: 2;
-    width: 350px;
-    max-width: 100%;
+    display: none;
   }
   .about-wrapper .about-text {
     order: 1;
     width: 100%;
+  }
+  .about-wrapper .about-text .mobile-image {
+    display: block;
+    max-width: 100%;
+  }
+  .about-wrapper .about-text .mobile-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 1em;
+    margin: 0.5em 0;
   }
 }
 

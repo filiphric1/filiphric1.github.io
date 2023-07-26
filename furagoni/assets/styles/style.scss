@@ -467,6 +467,11 @@ h6,.h6 {
         text-align: center;
         margin: 1em 0 .5em;
     }
+    @media only screen and (max-width: 991px) {
+        .services-description {
+            text-align: center;
+        }
+    }
 }
 
 .about-wrapper {
@@ -481,6 +486,9 @@ h6,.h6 {
     }
     .about-text {
         width: 75%;
+        .mobile-image {
+            display: none;
+        }
     }
     @media only screen and (max-width: 991px) {
         flex-direction: column;
@@ -488,13 +496,21 @@ h6,.h6 {
         align-items: center;
         padding: 0 1em;
         .about-image {
-            order: 2;
-            width: 350px;
-            max-width: 100%;
+            display: none;
         }
         .about-text {
             order: 1;
             width: 100%;
+            .mobile-image {
+                display: block;
+                max-width: 100%;
+                img {
+                    width: 350px;
+                    max-width: 100%;
+                    border-radius: 1em;
+                    margin: .5em 0;
+                }
+            }
         }
     }
 }
