@@ -329,10 +329,10 @@ h6, .h6 {
   }
   .custom-intro-wrap .intro-text .main-heading {
     line-height: 0.6;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.5em;
   }
   .custom-intro-wrap .intro-text .main-heading:after {
-    bottom: -0.1em;
+    display: none;
   }
   .custom-intro-wrap .intro-text .main-heading .subheading {
     display: block;

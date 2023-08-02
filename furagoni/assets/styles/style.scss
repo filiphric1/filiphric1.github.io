@@ -349,9 +349,9 @@ h6,.h6 {
             z-index: 10;
             .main-heading {
                 line-height: .6;
-                margin-bottom: .6em;
+                margin-bottom: .5em;
                 &:after {
-                    bottom: -.1em;
+                    display: none;
                 }
                 .subheading {
                     display: block;
