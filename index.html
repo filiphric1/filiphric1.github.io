@@ -6,14 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Filip Hric | Frontend Web Developer</title>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet" />
 
-		<link rel="stylesheet" href="assets/styles/libs/normalize.css" />
-		<link rel="stylesheet" href="assets/styles/libs/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/styles/libs/animate.css" />
-		<link rel="stylesheet" href="assets/styles/style.css?v1" />
+		<link rel="stylesheet" href="assets/styles/style.css?v2" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
@@ -24,235 +21,29 @@
 		<meta name="theme-color" content="#ffffff" />
 	</head>
 
-	<body id="top" data-bs-spy="scroll" data-bs-target="#navbar-menu">
-		<header class="container">
-			<nav class="custom-navbar">
-				<div class="custom-navbar-logo">
-					<a href="/">filip hric</a>
-				</div>
-				<div class="custom-navbar-content">
-					<ul id="navbar-menu" class="nav nav-tabs custom-navbar-menu" role="tablist">
-						<li class="menu-item nav-item"><a class="nav-link" href="#about">01/ o mně</a></li>
-						<li class="menu-item nav-item"><a class="nav-link" href="#projects">02/ projekty</a></li>
-					</ul>
-					<div class="navbar-contacts">
-						<a href="mailto:filip.hric@seznam.cz" class="navbar-contact">
-							<img src="assets/img/email.svg" alt="Email">
-						</a>
-						<a href="https://github.com/filipespes1" class="navbar-contact" target="_blank">
-							<img src="assets/img/github.svg" alt="GitHub">
-						</a>
-						<a href="https://www.linkedin.com/in/filip-hric-01a68813b/" class="navbar-contact" target="_blank">
-							<img src="assets/img/linkedin.svg" alt="LinkedIn">
-						</a>
-					</div>
-				</div>
-				<div class="hamburger">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
-			</nav>
-		</header>
-
-		<section class="custom-intro-wrap">
-			<div class="container">
-				<div class="custom-intro-content">
-					<div class="custom-intro-image-section">
-						<div class="main-image">
-							<img src="assets/img/profile-top.png" alt="FH">
-						</div>
-					</div>
-					<div class="custom-intro-heading-section">
-						<h1><span id="heading" class="subheading h3">&lt;front-end&gt;<br>&lt;/web developer&gt;</span></h1>
-					</div>
-				</div>
-			</div>
-			<div class="scroll-button-wrap">
-				<div class="button-shadow animated hinge infinite zoomIn"></div>
-				<a href="#about" class="scroll-down-button smoothscroll circle-button" aria-label="Přejít na další obsah"></a>
-			</div>
-		</section>
-
-		<section id="about">
-			<div class="navbar-placeholer"></div>
-			<div class="container">
-				<h2 class="h4 section-heading">
-					moje cesta k webům
-				</h2>
-				<div class="custom-journey-content">
-					<div class="journey-section section-1">
-						<h3 class="h6 heading">2018</h3>
-						<p class="text">
-							<span class="important">Univerzita Palackého Olomouc</span><br>
-							– obor Geoinformatika<br>
-							– titul Mgr.
-						</p>
-					</div>
-					<div class="journey-section section-2">
-						<h3 class="h6 heading">2018 – 2020</h3>
-						<p class="text">
-							<span class="important">JANKŮ podlahy s.r.o.</span><br>
-							– admininstrátor webu<br>
-							– studium HTML, CSS, jQuery, PHP
-						</p>
-					</div>
-					<div class="journey-section section-3">
-						<h3 class="h6 heading">2020 – dnes</h3>
-						<p class="text">
-							<span class="important">STUDIO VIRTUALIS s.r.o.</span><br>
-							– front-end / full stack<br>
-							– tvorba webů na vlastním CMS
-						</p>
-					</div>
+	<body>
+		<main class="info-card-container">
+			<div class="info-card">
+				<div class="profile-section">
+					<h1 class="name">Filip Hric</h1>
+					<p class="title">Frontend Web Developer</p>
 				</div>
 
-				<h2 class="h4 section-heading">
-					používáné technologie
-				</h2>
-				<div class="custom-technology-content">
-					<div class="technology-section section-big html-section">
-						<img src="assets/img/technology/html.png" alt="HTML">
-						<p class="name">HTML</p>
-					</div>
-					<div class="technology-section section-big scss-section">
-						<img src="assets/img/technology/sass.png" alt="SCSS">
-						<p class="name">SCSS</p>
-					</div>
-					<div class="technology-section section-big javascript-section">
-						<img src="assets/img/technology/javascript.png" alt="JavaScript">
-						<p class="name">JavaScript</p>
-					</div>
-					<div class="technology-section php-section">
-						<p class="name">PHP</p>
-					</div>
-					<div class="technology-section mariadb-section">
-						<p class="name">MariaDB</p>
-					</div>
-					<div class="technology-section twig-section">
-						<p class="name">Twig</p>
-					</div>
-					<div class="technology-section bootstrap-section">
-						<p class="name">Bootstrap</p>
-					</div>
-					<div class="technology-section git-section">
-						<p class="name">Git</p>
-					</div>
-					<div class="technology-section jquery-section">
-						<p class="name">jQuery</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="projects">
-			<div class="navbar-placeholer"></div>
-			<div class="container">
-				<h2 class="h4 section-heading">
-					poslední projekty
-				</h2>
-				<div class="custom-projects-wrap">
-					<div class="project-cards-wrap">
-						<a href="https://www.meaningly.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">meaningly.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-								<span class="tag">PHP</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.glrcz.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">glrcz.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.vasdanar.com/" class="project-card" target="_blank">
-							<h3 class="h6 heading">vasdanar.com</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.denisanova.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">denisanova.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-								<span class="tag">PHP</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.anvstavby.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">anvstavby.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-								<span class="tag">PHP</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.revitalstav.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">revitalstav.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.boley.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">boley.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-								<span class="tag">JS</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-						<a href="https://www.fyziosternberk.cz/" class="project-card" target="_blank">
-							<h3 class="h6 heading">fyziosternberk.cz</h3>
-							<div class="project-tags">
-								<span class="tag">HTML</span>
-								<span class="tag">SCSS</span>
-							</div>
-							<span class="website-link">➡ zobrazit web</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="custom-contacts-wrap">
-			<div class="container">
-				<p class="custom-contacts-text">
-					<span class="gradient">filip hric</span><br>
-					<span class="small-text">front-end web developer</span>
-				</p>
-				<div class="footer-contacts">
-					<a href="mailto:filip.hric@seznam.cz" class="footer-contact">
-						<img src="assets/img/email.svg" alt="Email">
+				<div class="contacts-section">
+					<a href="mailto:filip.hric@seznam.cz" class="contact-link">
+						<img src="assets/img/email.svg" alt="Email" />
+						<span>filip.hric@seznam.cz</span>
 					</a>
-					<a href="https://github.com/filipespes1" class="footer-contact" target="_blank">
-						<img src="assets/img/github.svg" alt="GitHub">
+					<a href="https://github.com/filiphric1" class="contact-link" target="_blank">
+						<img src="assets/img/github.svg" alt="GitHub" />
+						<span>GitHub</span>
 					</a>
-					<a href="https://www.linkedin.com/in/filip-hric-01a68813b/" class="footer-contact" target="_blank">
-						<img src="assets/img/linkedin.svg" alt="LinkedIn">
+					<a href="https://www.linkedin.com/in/filip-hric-01a68813b/" class="contact-link" target="_blank">
+						<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+						<span>LinkedIn</span>
 					</a>
 				</div>
 			</div>
-		</section>
-
-		<script src="assets/scripts/libs/jquery-3.6.0.min.js"></script>
-		<script src="assets/scripts/libs/bootstrap.bundle.min.js"></script>
-		<script src="assets/scripts/main.js"></script>
+		</main>
 	</body>
 </html>
