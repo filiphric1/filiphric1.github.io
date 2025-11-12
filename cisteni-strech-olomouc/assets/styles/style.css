@@ -139,7 +139,7 @@ h6, .h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 .custom-navbar .custom-navbar-logo a img {
-  max-height: 70px;
+  max-height: 75px;
   transition: all 0.3s ease-in-out 0s;
 }
 .custom-navbar .custom-navbar-content {
@@ -299,7 +299,7 @@ h6, .h6 {
 }
 @media only screen and (max-width: 767px) {
   .custom-intro-wrap {
-    min-height: 450px;
+    min-height: calc(100vh - 70px);
     height: calc(100vh - 70px);
   }
 }
