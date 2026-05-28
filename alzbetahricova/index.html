@@ -22,10 +22,9 @@
 				<nav class="navbar__menu" id="navMenu" aria-label="Hlavní navigace">
 					<ul class="navbar__list">
 						<li><a href="#about" class="navbar__link">O mně</a></li>
-						<li><a href="#pricing" class="navbar__link">Ceník</a></li>
-						<li><a href="#contact" class="navbar__link">Kontakt</a></li>
+						<li><a href="#pricing" class="navbar__link">Lekce</a></li>
 					</ul>
-					<a href="#contact" class="btn btn--primary navbar__cta">Napsat mi</a>
+					<button type="button" class="btn btn--primary navbar__cta" data-contact-dialog-trigger>Napsat mi</button>
 				</nav>
 			</div>
 		</header>
@@ -39,7 +38,7 @@
 						<h1 class="hero__title">Angličtina a italština ve Zlíně i online.</h1>
 						<p class="hero__subtitle">Soukromá výuka pro dospělé, studenty i děti. Klidně, prakticky a s důrazem na mluvení.</p>
 						<div class="hero__actions">
-							<a href="#contact" class="btn btn--primary btn--lg">Domluvit lekci</a>
+							<button type="button" class="btn btn--primary btn--lg" data-contact-dialog-trigger>Domluvit lekci</button>
 							<a href="#about" class="btn btn--text">Poznat přístup</a>
 						</div>
 						<ul class="hero__facts" aria-label="Základní informace">
@@ -58,7 +57,7 @@
 			<!-- ======== ABOUT ======== -->
 			<section class="section about" id="about">
 				<div class="container about__inner">
-					<div class="about__label" aria-hidden="true">01</div>
+					<div class="about__label" aria-hidden="true">“</div>
 					<div class="about__content">
 						<p class="eyebrow">O mně</p>
 						<h2 class="section__title">O mně</h2>
@@ -80,8 +79,12 @@
 			<section class="section pricing" id="pricing">
 				<div class="container">
 					<p class="eyebrow eyebrow--center">Lekce</p>
-					<h2 class="section__title section__title--center">Ceník</h2>
-					<p class="pricing__intro">Tři jednoduché možnosti podle toho, kde a jak se chcete učit.</p>
+					<h2 class="section__title section__title--center">Lekce</h2>
+					<p class="pricing__intro">Možnosti výuky podle toho, kde a jak se chcete učit.</p>
+					<div class="pricing__notice" role="note">
+						<strong>Momentálně se nacházím na mateřské dovolené.</strong>
+						<p>Nové lekce teď nepřijímám. Pokud mi chcete napsat kvůli budoucí spolupráci, ozvěte se mi prosím přes WhatsApp nebo e-mail.</p>
+					</div>
 					<div class="pricing__grid">
 						<article class="price-card">
 							<span class="price-card__tag">Flexibilní</span>
@@ -101,8 +104,7 @@
 								<li>Materiály v ceně</li>
 								<li>Pro dospělé i studenty</li>
 							</ul>
-							<p class="price-card__price"><span class="price-card__amount">550 Kč</span> / lekce</p>
-							<a href="#contact" class="btn btn--outline">Vybrat lekci</a>
+							<button type="button" class="btn btn--outline" data-contact-dialog-trigger>Napsat dotaz</button>
 						</article>
 
 						<article class="price-card">
@@ -122,8 +124,7 @@
 								<li>Dojíždění po Zlíně</li>
 								<li>Individuální plán</li>
 							</ul>
-							<p class="price-card__price"><span class="price-card__amount">600 Kč</span> / lekce</p>
-							<a href="#contact" class="btn btn--outline">Vybrat lekci</a>
+							<button type="button" class="btn btn--outline" data-contact-dialog-trigger>Napsat dotaz</button>
 						</article>
 
 						<article class="price-card">
@@ -142,11 +143,10 @@
 							<p class="price-card__desc">Hravé „jazykové odpoledne" pro děti, kde se učí přirozeně skrz hru.</p>
 							<ul class="price-card__notes">
 								<li>90 minut</li>
-								<li>Děti 4–10 let</li>
+								<li>Děti 3–10 let</li>
 								<li>Hry a komunikace v jazyce</li>
 							</ul>
-							<p class="price-card__price"><span class="price-card__amount">700 Kč</span> / lekce</p>
-							<a href="#contact" class="btn btn--outline">Vybrat lekci</a>
+							<button type="button" class="btn btn--outline" data-contact-dialog-trigger>Napsat dotaz</button>
 						</article>
 					</div>
 				</div>
@@ -158,23 +158,11 @@
 					<div class="contact__info">
 						<p class="eyebrow">Kontakt</p>
 						<h2 class="section__title">Kontakt</h2>
-						<p class="contact__text">Napište mi, s čím chcete v angličtině nebo italštině pohnout. Domluvíme lekci podle vašeho cíle a tempa.</p>
+						<p class="contact__text">Momentálně jsem na mateřské dovolené. Pokud mi chcete napsat kvůli budoucí spolupráci, otevřete kontaktní možnosti níže.</p>
 						<div class="contact__actions">
-							<a class="btn btn--whatsapp btn--lg" href="https://wa.me/420602573805?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20lekce%20angli%C4%8Dtiny%20nebo%20ital%C5%A1tiny." target="_blank" rel="noopener noreferrer" aria-label="Napsat Alžbětě Hricové na WhatsApp">
-								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-									<path d="M12.04 2C6.58 2 2.14 6.34 2.14 11.68c0 1.7.46 3.36 1.34 4.82L2 22l5.66-1.44a10.1 10.1 0 0 0 4.38.98c5.46 0 9.9-4.34 9.9-9.68S17.5 2 12.04 2Zm0 17.9c-1.42 0-2.8-.36-4.02-1.05l-.28-.16-3.35.85.88-3.2-.19-.3a8.06 8.06 0 0 1-1.28-4.36c0-4.43 3.7-8.04 8.24-8.04s8.24 3.6 8.24 8.04-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.46-.7-1.68-.78-.23-.08-.4-.12-.56.12-.17.24-.64.78-.79.94-.14.16-.29.18-.54.06-.25-.12-1.04-.37-1.98-1.2-.73-.64-1.23-1.44-1.37-1.68-.14-.24-.02-.37.11-.49.12-.11.25-.29.37-.43.12-.14.17-.24.25-.4.08-.16.04-.3-.02-.43-.06-.12-.56-1.31-.77-1.8-.2-.47-.41-.41-.56-.42h-.48c-.17 0-.43.06-.66.3-.23.24-.87.83-.87 2.02 0 1.19.89 2.34 1.02 2.5.12.16 1.75 2.6 4.24 3.65.59.25 1.05.4 1.41.51.59.18 1.13.16 1.56.1.48-.07 1.46-.58 1.66-1.15.21-.56.21-1.04.15-1.15-.06-.1-.23-.16-.48-.28Z" />
-								</svg>
-								Napsat na WhatsApp
-							</a>
+							<button type="button" class="btn btn--whatsapp btn--lg" data-contact-dialog-trigger>Zobrazit kontakty</button>
 						</div>
 						<ul class="contact__details">
-							<li>
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-									<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-									<polyline points="22,6 12,13 2,6" />
-								</svg>
-								<a href="mailto:betty.jurikova@gmail.com">betty.jurikova@gmail.com</a>
-							</li>
 							<li>
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
 									<path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z" />
@@ -184,10 +172,37 @@
 							</li>
 						</ul>
 					</div>
-					<p class="contact__copyright">&copy; <span id="currentYear">2026</span> Alžběta Hricová. Vytvořeno s&nbsp;láskou.</p>
+					<p class="contact__copyright">&copy; <span id="currentYear">2026</span> Alžběta Hricová. Vytvořeno s&nbsp;láskou ❤️</p>
 				</div>
 			</footer>
 		</main>
+
+		<div class="contact-dialog" id="contactDialog" aria-hidden="true">
+			<div class="contact-dialog__backdrop" data-contact-dialog-close></div>
+			<div class="contact-dialog__panel" role="dialog" aria-modal="true" aria-labelledby="contactDialogTitle" aria-describedby="contactDialogText" tabindex="-1">
+				<button type="button" class="contact-dialog__close" aria-label="Zavřít kontaktní dialog" data-contact-dialog-close>
+					<span aria-hidden="true">×</span>
+				</button>
+				<p class="eyebrow">Kontakt</p>
+				<h2 class="contact-dialog__title" id="contactDialogTitle">Momentálně jsem na mateřské dovolené</h2>
+				<p class="contact-dialog__text" id="contactDialogText">Nové lekce teď nepřijímám. Pokud mi chcete napsat kvůli budoucí spolupráci, můžete mi poslat zprávu přes WhatsApp nebo e-mail.</p>
+				<div class="contact-dialog__actions">
+					<a class="btn btn--primary btn--lg" href="https://wa.me/420602573805?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20z%C3%A1jem%20o%20budouc%C3%AD%20spolupr%C3%A1ci%20v%20r%C3%A1mci%20v%C3%BDuky%20angli%C4%8Dtiny%20nebo%20ital%C5%A1tiny." target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path d="M12.04 2C6.58 2 2.14 6.34 2.14 11.68c0 1.7.46 3.36 1.34 4.82L2 22l5.66-1.44a10.1 10.1 0 0 0 4.38.98c5.46 0 9.9-4.34 9.9-9.68S17.5 2 12.04 2Zm0 17.9c-1.42 0-2.8-.36-4.02-1.05l-.28-.16-3.35.85.88-3.2-.19-.3a8.06 8.06 0 0 1-1.28-4.36c0-4.43 3.7-8.04 8.24-8.04s8.24 3.6 8.24 8.04-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.46-.7-1.68-.78-.23-.08-.4-.12-.56.12-.17.24-.64.78-.79.94-.14.16-.29.18-.54.06-.25-.12-1.04-.37-1.98-1.2-.73-.64-1.23-1.44-1.37-1.68-.14-.24-.02-.37.11-.49.12-.11.25-.29.37-.43.12-.14.17-.24.25-.4.08-.16.04-.3-.02-.43-.06-.12-.56-1.31-.77-1.8-.2-.47-.41-.41-.56-.42h-.48c-.17 0-.43.06-.66.3-.23.24-.87.83-.87 2.02 0 1.19.89 2.34 1.02 2.5.12.16 1.75 2.6 4.24 3.65.59.25 1.05.4 1.41.51.59.18 1.13.16 1.56.1.48-.07 1.46-.58 1.66-1.15.21-.56.21-1.04.15-1.15-.06-.1-.23-.16-.48-.28Z" />
+						</svg>
+						WhatsApp
+					</a>
+					<a class="btn btn--outline btn--lg" href="mailto:betty.jurikova@gmail.com?subject=Dotaz%20na%20budouc%C3%AD%20spolupr%C3%A1ci">
+						<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+							<polyline points="22,6 12,13 2,6" />
+						</svg>
+						E-mail
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<script src="assets/main.js"></script>
 	</body>
