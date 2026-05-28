@@ -313,7 +313,7 @@ p {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	padding: 8.5rem 1.5rem 3rem;
+	padding: 4rem 1.5rem;
 	flex-direction: column;
 	justify-content: center;
 	background: var(--color-background);
@@ -375,6 +375,10 @@ p {
 .navbar__cta {
 	width: min(100%, 20rem);
 	margin: 3rem auto 0;
+	min-height: 3.6rem;
+	padding-inline: 1.8rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.1em;
 }
 
 /* ==========================================================================
@@ -415,12 +419,6 @@ p {
 	margin-top: 2.5rem;
 	flex-direction: column;
 	gap: 1rem;
-}
-
-@media (max-width: 767.98px) {
-	.hero__actions .btn--text {
-		display: none;
-	}
 }
 
 .hero__facts {
@@ -484,6 +482,39 @@ p {
 	-webkit-backdrop-filter: blur(10px);
 }
 
+@media (max-width: 767.98px) {
+	.hero {
+		padding: 7.25rem 0 3.75rem;
+		min-height: auto;
+	}
+
+	.hero__inner {
+		gap: 1rem;
+	}
+
+	.hero__title {
+		max-width: 9ch;
+		font-size: clamp(2.85rem, 13vw, 4.35rem);
+	}
+
+	.hero__subtitle {
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.hero__actions {
+		margin-top: 1.85rem;
+	}
+
+	.hero__facts {
+		margin-top: 2rem;
+	}
+
+	.hero__actions .btn--text {
+		display: none;
+	}
+}
+
 /* ==========================================================================
    About
    ========================================================================== */
@@ -501,12 +532,12 @@ p {
 
 .about__label {
 	position: absolute;
-	top: -5.5rem;
-	right: -0.5rem;
+	top: -3.8rem;
+	right: 0.35rem;
 	z-index: 0;
 	color: var(--color-brand-primary);
 	font-family: 'Playfair Display', Georgia, serif;
-	font-size: clamp(10rem, 40vw, 22rem);
+	font-size: clamp(10rem, 28vw, 22rem);
 	font-weight: 600;
 	letter-spacing: -0.08em;
 	line-height: 0.62;
