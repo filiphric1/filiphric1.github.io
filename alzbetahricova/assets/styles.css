@@ -1093,6 +1093,9 @@ p {
 		min-height: 2.9rem;
 		margin: 0;
 		padding-inline: 1.15rem;
+		font-size: 0.74rem;
+		letter-spacing: 0.14em;
+		line-height: 1.2;
 	}
 
 	.hero {
